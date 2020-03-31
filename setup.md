@@ -8,4 +8,4 @@
 
 ## ติดตั้ง Visual Studio Code Extension สำหรับการพัฒนาแอพด้วย Flutter
 
-[Nextflow’s Flutter Extension Pack](https://marketplace.visualstudio.com/items?itemName=teerasej.nextflow-s-flutter-extension-pack)
+กดติดตั้งชุดรวมส่วนเสริม ได้จากที่นี่: [Nextflow’s Flutter Extension Pack](https://marketplace.visualstudio.com/items?itemName=teerasej.nextflow-s-flutter-extension-pack) (เข้าไปแล้วกดปุ่ม install)
