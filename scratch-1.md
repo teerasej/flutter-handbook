@@ -44,7 +44,8 @@ import 'package:flutter/material.dart'
 
 void main() {
 	runApp(MaterialApp(
-        title: 'My Flutter'
+        title: 'My Flutter',
+        home: Text('hello')
     ));
 }
 ```
@@ -60,7 +61,7 @@ runApp(MaterialApp(
     title: 'My Flutter',
     home: Scaffold(
       appBar: AppBar(
-        title: Text('OK'),
+        title: Text('Counter'),
       ),
       body: Text('hello'),
     ),
@@ -94,13 +95,40 @@ Property ชื่อ `theme:` ของ `MaterialApp()` นั้นรับ�
 
 จากนั้นทดสอบ ค่า theme อีกแบบหนึ่ง
 
+```dart
 runApp(MaterialApp(
     ...
     theme: ThemeData(
       brightness: Brightness.dark
     ),
 	...
+```
 
 รันทดสอบแอพพลิเคชั่น ให้สังเกตการเปลี่ยนแปลงของแอพพลิเคชั่น 
 
 นี่คือ Dark theme นั่นเอง (ใช้ได้ใน Android 10 แล้วนะ)
+
+## 7. ไฟล์สมบูรณ์
+
+`lib/main.dart`
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+	runApp(MaterialApp(
+        title: 'My Flutter',
+        theme: ThemeData(
+            primarySwatch: Colors.blue,
+            brightness: Brightness.dark
+        ),
+        home: Scaffold(
+            appBar: AppBar(
+                title: Text('Counter'),
+            ),
+            body: Text('hello'),
+        ),
+    ));
+}
+```
+
