@@ -1,6 +1,9 @@
 
 # Web API
 
+- [Start Project](https://www.dropbox.com/s/52iznb5rzep7ubj/nextflow_api_start.zip?dl=0)
+- [Finish Project](https://www.dropbox.com/s/k7j790b68fv48bn/nextflow_api_finish.zip?dl=0)
+
 ## 1. เพิ่ม package
 
 เราจะมีการใช้ package เพิ่มเติม ให้เปิดไฟล์ `pubspec.yaml` และเพิ่มชื่อ [http package](https://pub.dev/packages/http) ในส่วนของ dependecies ดังนี้
@@ -55,7 +58,12 @@ import 'dart:convert';
 
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
-  List numberList = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+  List contactList = [
+    ContactModel(name: 'Nextflow', phone: '083-071-3373'),
+    ContactModel(name: 'Peter Parker', phone: '089-322-1223'),
+    ContactModel(name: 'Jazz', phone: '084-212-3290'),
+  ];
 
   // เรียกใช้งาน method getData() ตอนแสดง MyHomePage
   @override
@@ -124,13 +132,15 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(color: Colors.grey),
             ),
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailPage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return DetailPage(contact);
+              }));
             },
           );
         },
       ),
     );
+  }
 ```
 
 ## 5. ส่งข้อมูลไปยังหน้า Detail Page
@@ -140,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
 ```dart
 
 // import โค้ดที่เราสร้างไว้ในไฟล์ contact_model.dart
-import 'package:contact_app/contact_model.dart';
+import 'contact_model.dart';
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
@@ -196,7 +206,10 @@ class DetailPage extends StatelessWidget {
 ```dart
 onTap: () {
     Navigator.push(context,
-        MaterialPageRoute(builder: (context) => DetailPage(contact)));
+        MaterialPageRoute(builder: (context) {
+        return DetailPage(contact);
+        }
+      ));
 },
 ```
 
