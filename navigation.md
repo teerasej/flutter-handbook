@@ -1,6 +1,9 @@
 
 # Navigation 
 
+- [Start Project](https://www.dropbox.com/s/wf0yszojv2ge24f/nextflow_nav_start.zip?dl=0)
+- [Finish Project](https://www.dropbox.com/s/61npw89ay9t5ywc/nextflow_nav_finish.zip?dl=0)
+
 ## 1. เตรียมไฟล์ 
 
 สร้างโปรเจคใหม่ หรือใช้โปรเจคเดิมที่มีอยู่แล้ว 
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Nextflow Contact',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -32,8 +35,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  
 
-  List numberList = ['a','b','c','d','e','f'];
+  List contactList = [
+    ContactModel(name: 'Nextflow', phone: '083-071-3373'),
+    ContactModel(name: 'Peter Parker', phone: '089-322-1223'),
+    ContactModel(name: 'Jazz', phone: '084-212-3290'),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -42,15 +50,28 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Contact'),
       ),
       body: ListView.builder(
-        itemCount: numberList.length, 
         itemBuilder: (BuildContext context, int index) {
+
+          var contact = contactList[index] as ContactModel;
+
           return ListTile(
-            title: Text(numberList[index].toString()),
+            title: Text(contact.name),
+            subtitle: Text(contact.phone)
           );
         },
+        itemCount: contactList.length, 
       ),
     );
   }
+}
+
+
+class ContactModel { 
+
+  String name;
+  String phone;
+
+  ContactModel({this.name = "Nextflow", this.phone = "083-071-3373"});
 }
 ```
 
@@ -59,15 +80,21 @@ class _MyHomePageState extends State<MyHomePage> {
 สร้างไฟล์ `lib/detail_page.dart` และเขียนสร้าง Widget ชื่อ `DetailPage` ตามด้านล่าง
 
 ```dart
-
 import 'package:flutter/material.dart';
+import 'main.dart';
 
 class DetailPage extends StatelessWidget {
+
+  ContactModel contact;
+
+  DetailPage(this.contact);
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ชื่อ'),
+        title: Text('${contact.name}'),
       ),
       body: Container(
 
@@ -88,7 +115,7 @@ class DetailPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Icon(Icons.phone),
-                  Text('Call')
+                  Text('Call ${contact.phone}')
                 ],
               ),
             ),
@@ -113,9 +140,13 @@ import 'detail_page.dart';
 
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
+  
 
-  List numberList = ['a','b','c','d','e','f'];
-
+  List contactList = [
+    ContactModel(name: 'Nextflow', phone: '083-071-3373'),
+    ContactModel(name: 'Peter Parker', phone: '089-322-1223'),
+    ContactModel(name: 'Jazz', phone: '084-212-3290'),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -124,17 +155,19 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Contact'),
       ),
       body: ListView.builder(
-        itemCount: numberList.length, 
         itemBuilder: (BuildContext context, int index) {
+
+          var contact = contactList[index] as ContactModel;
+
           return ListTile(
-            title: Text(numberList[index].toString()),
+            title: Text(contact.name),
+            subtitle: Text(contact.phone),
             // เพิ่ม onTap property
             onTap: () {
                 // ใช้ Navigator.push() ในการ render widget ชื่อ DetailPage ที่เราสร้าง และ import เข้ามาใช้
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => DetailPage())
-                );
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return DetailPage(contact);
+              }));
             },
           );
         },
@@ -145,3 +178,78 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 
 จากนั้นทดสอบรันแอพพลิเคชั่นดู
+
+## ไฟล์เต็ม 
+
+### lib/main.dart 
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:nextflow_nav/detail_page.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Nextflow Contact',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  
+
+  List contactList = [
+    ContactModel(name: 'Nextflow', phone: '083-071-3373'),
+    ContactModel(name: 'Peter Parker', phone: '089-322-1223'),
+    ContactModel(name: 'Jazz', phone: '084-212-3290'),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Contact'),
+      ),
+      body: ListView.builder(
+        itemBuilder: (BuildContext context, int index) {
+
+          var contact = contactList[index] as ContactModel;
+
+          return ListTile(
+            title: Text(contact.name),
+            subtitle: Text(contact.phone),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return DetailPage(contact);
+              }));
+            },
+          );
+        },
+        itemCount: contactList.length, 
+      ),
+    );
+  }
+}
+
+
+class ContactModel { 
+
+  String name;
+  String phone;
+
+  ContactModel({this.name = "Nextflow", this.phone = "083-071-3373"});
+}
+```
