@@ -1,7 +1,12 @@
 
 # Run & Debug Application
 
-## วิธีสร้างโปรเจค Flutter ใน Visual Studio Code
+# วิธีสร้างโปรเจค Flutter ใน Visual Studio Code
+
+- สำหรับ Android ให้แน่ใจว่าได้ทำการปลดล๊อค [Developer Option ตามขั้นตอนนี้แล้ว](https://nextflow.in.th/2014/enable-android-developer-option/)
+
+## ขั้นตอน
+
 
 1. เปิดโปรแกรม Visual Studio Code
 2. เรียกใช้งาน Command Palette โดยไปที่เมนู **View > Command Palette**
@@ -45,3 +50,8 @@
 ![2019-05-14_20-08-08 027677149c114fd4acceb6b61d2226b1](https://user-images.githubusercontent.com/85179/66843184-a0000700-ef96-11e9-9ec3-f3d99faf61c3.png)
 
 5. กดปุ่ม **Start Debug**
+
+## สำหรับพวกเราที่ต้องการทดสอบบนอุปกรณ์ iOS ด้วย Apple ID ที่ยังไม่เสียเงิน
+
+1. Apple ID ที่ยังไม่เสียเงินลงทะเบียน Apple Developer Account จะมีข้อจำกัดมากกว่าแบบที่เสียเงินแล้ว
+2. การรันแอพบนอุปกรณ์ iOS ครั้งแรก แอพจะถูกติดตั้งบนอุปกรณ์ แต่จะไม่สามารถรันแอพขึ้นมาได้ [มีขั้นตอนที่ต้องทำเพิ่มเติมดังนี้](run-ios-app-with-free-apple-account.md)
