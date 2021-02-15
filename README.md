@@ -23,6 +23,8 @@
 
 ## Contact App Workshop
 
+สร้างโปรเจค `contact_app`
+
 - [ListView Widget](listview.md)
 - [ระบบ Navigation](navigation.md)
 - [Web API](web-api.md)
