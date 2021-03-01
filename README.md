@@ -36,6 +36,11 @@
 - [ระบบ Navigation](navigation.md)
 - [Web API](web-api.md)
 
+## Barcode Scanner 
+
+- [Workshop](barcode-scanner/readme.md)
+
+
 ## Publishing Application 
 
 - [การสร้างไฟล์ AAB (Android)](https://nextflow.in.th/2019/flutter-publish-aab-and-apk-file-for-android-thai/)
