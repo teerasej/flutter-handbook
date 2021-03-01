@@ -24,6 +24,9 @@
 
 - [Contact App with Tab & Stack Navigation](navigation-1/readme.md)
 
+## Note App with JWT Authentication
+
+- [Workshop](web-api-auth/readme.md)
 
 ## Contact App Workshop
 
