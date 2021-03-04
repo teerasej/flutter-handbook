@@ -35,6 +35,11 @@ flutter package get
 https://randomuser.me/api/?results=50
 ```
 
+```
+// หรืออยากลอง
+https://nextflow.in.th/api/water-meter/data.json
+```
+
 และเราจะทำการ copy JSON ที่ได้จาก URL ดังกล่าวมาใช้ใน ตัว Class Generator เพื่อสร้างไฟล์ dart ที่เป็นตัวแทนของ class ต่างๆ 
 
 - [JSON to dart](https://javiercbk.github.io/json\_to\_dart/)
