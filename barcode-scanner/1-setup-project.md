@@ -35,9 +35,18 @@ dependencies:
 
 จากโปรแกรม Visual Studio Code ให้คลิกขวาที่โฟลเดอร์ iOS และเลือกคำสั่ง **Open in Xcode**
 
+<img width="373" alt="2021-03-06_17-21-22" src="https://user-images.githubusercontent.com/85179/110203955-46f28500-7ea3-11eb-8fd7-f649ba00c319.png">
+
+
 เลือกโปรเจค Runner > Project > Runner > กำหนดค่า **iOS Deployment Target** เป็น **11**
 
+<img width="773" alt="2021-03-06_17-16-20" src="https://user-images.githubusercontent.com/85179/110203997-67224400-7ea3-11eb-9271-78c630c9e07f.png">
+
+
 เลือกโปรเจค Runner > Target > Runner > Build Settings > ค้นหาการตั้งค่าที่ชื่อ swift > กำหนดค่า **Swift Language Version** เป็น **5**
+
+<img width="1064" alt="2021-03-06_17-17-40" src="https://user-images.githubusercontent.com/85179/110204022-8325e580-7ea3-11eb-9400-6649c316022c.png">
+
 
 เสร็จแล้วให้ปิดโปรแกรม Xcode ลง 
  
@@ -45,6 +54,9 @@ dependencies:
 ### รันคำสั่ง pod install
 
 จากโปรแกรม Visual Studio Code ให้คลิกขวาที่โฟลเดอร์ iOS และเลือกคำสั่ง **Open in integrated Terminal**
+
+<img width="391" alt="2021-03-06_17-21-10" src="https://user-images.githubusercontent.com/85179/110204027-891bc680-7ea3-11eb-9c6e-638962484f6f.png">
+
 
 พิมพ์และรันคำสั่งด้านล่าง
 
@@ -74,14 +86,26 @@ Pod installation complete! There are 2 dependencies from the Podfile and 2 total
 
 จากโปรแกรม Visual Studio Code ให้คลิกขวาที่โฟลเดอร์ iOS และเลือกคำสั่ง **Open in Xcode**
 
+<img width="373" alt="2021-03-06_17-21-22" src="https://user-images.githubusercontent.com/85179/110204031-8e791100-7ea3-11eb-9099-e51d52a47a4c.png">
+
+
 ในที่นี้เราจะมีการกำหนด configuration ของโปรเจค จากปกติให้ไปใช้ของ Cocoa pod แทน
 
 เลือกโปรเจค Runner > Project > Runner > Configuration > Debug > กำหนดเป็น **Pods-Runner.debug**
 
+<img width="1019" alt="2021-03-06_17-22-30" src="https://user-images.githubusercontent.com/85179/110204037-92a52e80-7ea3-11eb-8c54-cf5e4f9e92c8.png">
+
+
 
 เลือกโปรเจค Runner > Project > Runner > Configuration > Debug > กำหนดเป็น **Pods-Runner.release**
 
+<img width="1006" alt="2021-03-06_17-22-44" src="https://user-images.githubusercontent.com/85179/110204042-9769e280-7ea3-11eb-9491-415d9019f5fe.png">
+
+
 
 เลือกโปรเจค Runner > Project > Runner > Configuration > Debug > กำหนดเป็น **Pods-Runner.profile**
+
+<img width="999" alt="2021-03-06_17-22-56" src="https://user-images.githubusercontent.com/85179/110204044-9afd6980-7ea3-11eb-8dfb-6bbf0080f6ee.png">
+
 
 เสร็จเรียบร้อยแล้ว ให้ปิด Xcode ลง
