@@ -3,11 +3,11 @@
 
 ## 1. ดาวน์โหลดและเตรียมโปรเจค
 
-- สามารถดาวน์โหลด zip ไฟล์จาก[ลิ้งค์นี้](https://github.com/teerasej/flutter-geolocation/tree/start)
+- สามารถดาวน์โหลด zip ไฟล์จาก[ลิ้งค์นี้](https://github.com/teerasej/nextflow_flutter_geolocation/tree/starter)
 - หรือใช้คำสั่ง clone โปรเจคด้วย git ด้านล่างก็ได้ 
 
 ```bash
-git clone -b stater https://github.com/teerasej/flutter-geolocation
+git clone -b starter https://github.com/teerasej/nextflow_flutter_geolocation
 ```
 
 เปิดโปรเจคแล้วรันคำสั่ง `flutter package get` ให้เรียบร้อย
@@ -22,7 +22,7 @@ git clone -b stater https://github.com/teerasej/flutter-geolocation
 ```yaml
 dependencies:
   ...
-  geolocation: ^1.1.2
+  location: ^4.0.2
 ```
 
-- **geolocation** สำหรับเรียกใช้ตัวระบุค่า GPS
+- **[location](https://pub.dev/packages/location)** สำหรับเรียกใช้ค่า GPS จากระบบ
