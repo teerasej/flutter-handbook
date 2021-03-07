@@ -25,7 +25,7 @@ dependencies:
   flutter_barcode_scanner: ^1.0.2
 ```
 
-- **flutter_barcode_scanner** สำหรับเรียกใช้ตัวแสกน และอ่านค่ากลับมาใช้งาน
+- **[flutter_barcode_scanner](https://pub.dev/packages/flutter_barcode_scanner)** สำหรับเรียกใช้ตัวแสกน และอ่านค่ากลับมาใช้งาน
 
 ## 3. การตั้งค่าสำหรับระบบ iOS
 

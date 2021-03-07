@@ -26,5 +26,5 @@ dependencies:
   dio: ^3.0.10
 ```
 
-- **flutter_secure_storage** สำหรับเก็บ token ที่ได้จากการล๊อคอิน เพื่อใช้ในการติดต่อกับ Web API
-- **dio** ตัวช่วยในการส่ง Request และรับ Response 
+- **[flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage)** สำหรับเก็บ token ที่ได้จากการล๊อคอิน เพื่อใช้ในการติดต่อกับ Web API
+- **[dio](https://pub.dev/packages/dio)** ตัวช่วยในการส่ง Request และรับ Response 
