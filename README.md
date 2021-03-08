@@ -45,6 +45,10 @@
 
 - [Workshop](geolocation/readme.md)
 
+## SQLite - Note App
+
+- [Workshop](sqlite-note-app/readme.md)
+
 
 ## Publishing Application 
 
