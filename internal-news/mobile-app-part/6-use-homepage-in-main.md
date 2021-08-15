@@ -1,5 +1,5 @@
 
-# นำ HomePage Widget มาใช้กับ MaterialApp widget ในไฟล์ main.dart 
+# นำ HomePage Widget มาแสดงในแอพ
 
 ## 1. แทนที่ Text widget ด้วย HomePage widget 
 
