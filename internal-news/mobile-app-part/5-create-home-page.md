@@ -59,6 +59,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+
+    // แก้ไขโค้ดที่ติดมาให้เป็นแบบด้านล่าง เพราะค่า null ใน child property จะทำให้เกิด error
     return Container();
   }
 }
