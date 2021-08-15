@@ -4,7 +4,9 @@
 - [Slide](https://www.dropbox.com/s/gcnu2vxw9h2fzzg/Flutter%20-%20Training.pdf?dl=0)
 
 1. [Setup](setup.md)
-2. [Run & Debug Application](run-and-debug-app.md)
+2. [วิธีสร้างโปรเจคแอพใหม่](run-and-debug-app.md)
+3. [วิธีเลือกอุปกรณ์ทดสอบเป้าหมาย](select-target-device.md)
+4. [วิธีการ debug โปรเจค](debug-app.md)
 
 
 ## เรียนรู้จากการสร้างไหม่
