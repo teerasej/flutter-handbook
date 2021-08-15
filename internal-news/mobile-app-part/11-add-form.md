@@ -71,6 +71,15 @@ class _CreateNewsPageState extends State<CreateNewsPage> {
 
 ลงมาในส่วน **body:** ของ Scaffold เราจะเพิ่ม SizedBox ลงไปใน Column เพื่อสร้างระยะห่าง และกำหนดขนาดปุ่ม
 
+การครอบ Widget สามารถทำได้ง่ายๆ โดยการ
+
+1. กดเลือก Widget ที่ต้องการครอบ
+2. คลิกไอคอนหลอดไฟ (Show fixes) ทางด้านซ้ายของบรรทัดโค้ดนั้น
+3. เลือกคำสั่ง **Wrap with...** 
+
+<img width="576" alt="2021-08-15_21-06-51" src="https://user-images.githubusercontent.com/85179/129481229-e5e7765a-8926-4c73-b547-636ccaab5795.png">
+
+
 ```dart
 body: Padding(
         padding: EdgeInsets.all(10),
