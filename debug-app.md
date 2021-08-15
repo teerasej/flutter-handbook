@@ -9,6 +9,9 @@
 - โดยการกดปุ่ม **F5**
 - หรือคลิกขวาที่ไฟล์ `lib/main.dart` แล้วเลือกคำสั่ง **start debugging**
 
+<img width="381" alt="2021-08-15_15-11-57" src="https://user-images.githubusercontent.com/85179/129471981-4e206e16-dc09-49bd-8ae5-1dc92aab21c6.png">
+
+
 ## กรณีที่กดปุ่ม F5 แล้วไม่ทำงาน หรือ Debug ไม่ทำงาน
 
 สามารถเริ่มต้นโดยเข้าจากโหมด Debug ก็ได้ 
