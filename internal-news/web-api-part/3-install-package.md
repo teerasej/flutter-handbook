@@ -7,6 +7,7 @@
 ```
 npm i express
 npm i monk
+npm i cors
 ```
 
 > [Express](https://www.npmjs.com/package/express) และ [Monk](https://www.npmjs.com/package/monk) เป็นชุดคำสั่งโปรแกรมที่มีคนสร้างไว้ เพื่ออำนวยความสะดวกในการทำงาน อยู่ในรูปแบบ Open Source 
