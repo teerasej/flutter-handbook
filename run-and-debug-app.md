@@ -1,27 +1,53 @@
 
 # Run & Debug Application
 
-# วิธีสร้างโปรเจค Flutter ใน Visual Studio Code
+## วิธีสร้างโปรเจค Flutter ใน Visual Studio Code
 
 - สำหรับ Android ให้แน่ใจว่าได้ทำการปลดล๊อค [Developer Option ตามขั้นตอนนี้แล้ว](https://nextflow.in.th/2014/enable-android-developer-option/)
 
-## ขั้นตอน
-
-
 1. เปิดโปรแกรม Visual Studio Code
-2. เรียกใช้งาน Command Palette โดยไปที่เมนู **View > Command Palette**
+2. เรียกใช้งาน Command Palette โดยไปที่เมนู **View > Command Palette** 
 
-![2019-05-14_20-00-18 eb8d5ceb9f88451bbb8499e102f28346](https://user-images.githubusercontent.com/85179/66842810-1819fd00-ef96-11e9-9673-39896b688fac.png)
+หรือใช้ปุ่มลัด
+- Windows: Ctrl + Shift + P
+- MacOS: Cmd + Shift + P
+
+<img width="1023" alt="2021-08-14_22-32-37" src="https://user-images.githubusercontent.com/85179/129451369-d3d5bc6c-a356-4e09-a279-3ef6286eb903.png">
 
 
-3. เรียกคำส่ัง **Flutter: New Project**
-4. ตั้งชื่อโปรเจคในกล่องข้อความให้เรียบร้อย
+3. พิมพ์ค้นหา และเลือกคำส่ัง **Flutter: New Application Project**
+
+<img width="691" alt="2021-08-14_22-22-53" src="https://user-images.githubusercontent.com/85179/129451343-9ae2fa99-b09f-4e60-b851-00fcb9aa7b7d.png">
+
+
+5. ตั้งชื่อโปรเจคในกล่องข้อความให้เรียบร้อย
 
 ![2019-05-14_20-01-03 1bab8d8a15084f7fa241e330e039929e](https://user-images.githubusercontent.com/85179/66843057-6deea500-ef96-11e9-9f85-34def7a14a92.png)
 
 
-5. เลือกโฟลเดอร์ที่จะสร้างโปรเจคเก็บไว้
-6. รอจนระบบสร้างโปรเจคจนเสร็จ
+5. เลือกโฟลเดอร์ที่จะสร้างโปรเจคเก็บไว้ โดยไปที่ directory ที่ต้องการเก็บโปรเจคในคอมพิวเตอร์ของเรา และคลิกปุ่ม **Select a folder to create project in** 
+
+<img width="782" alt="2021-08-14_22-24-44" src="https://user-images.githubusercontent.com/85179/129451416-b09390d9-b795-4eed-ac89-9966ea348788.png">
+
+
+7. รอจนระบบสร้างโปรเจคจนเสร็จ
+
+## การเลือกอุปกรณ์เป้าหมายในการรันแอพพลิเคชั่น
+
+1. เรียกใช้งาน Command Palette โดยไปที่เมนู **View > Command Palette** 
+
+หรือใช้ปุ่มลัด
+- Windows: Ctrl + Shift + P
+- MacOS: Cmd + Shift + P
+
+2. ค้นหา และเลือกคำสั่ง **Flutter: Select Device** 
+
+<img width="745" alt="2021-08-14_22-37-05" src="https://user-images.githubusercontent.com/85179/129451538-83274bd3-def4-4f03-bef6-ef1a33771cf6.png">
+
+
+3. จะปรากฎรายการของ Chrome, Android Emulator, iOS Simulator ที่พร้อมใช้บนเครื่องในขณะนั้น ให้คลิกเลือก Device ที่ต้องการ ก่อนจะเริ่มการทดสอบแอพพลิเคชั่น 
+
+
 
 ## วิธีรันทดสอบแอพพลิเคชั่นจาก Visual Studio Code
 
