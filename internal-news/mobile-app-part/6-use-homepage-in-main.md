@@ -19,21 +19,10 @@
 
 - การเรียกใช้ HomePage widget ที่ไฟล์อื่นนอกเหนือจากไฟล์ home_page.dart ต้องมีการเขียนคำสั่ง import ไฟล์ home_page.dart ให้ถูกต้องด้วย 
 - ถ้าไม่มีเมนูตัวช่วย ส่วนนี้เราต้องเขียนอ้างอิงที่อยู่ด้วยตัวเอง
-- การใช้เมนูตัวช่วยจะทำให้การเขียนโค้ดสะดวกมากขึ้น และผิดพลาดน้อยลง หัดใช้ให้คล่องนะครับ
 
-```dart
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'News App',
-      home: Text('oh, hello'),
-    );
-  }
-}
-```
+**การใช้เมนูตัวช่วยจะทำให้การเขียนโค้ดสะดวกมากขึ้น และผิดพลาดน้อยลง หัดใช้ให้คล่องนะครับ**
+
 
 ## ไฟล์ lib/main.dart ที่ปรับปรุงเสร็จแล้ว
 
