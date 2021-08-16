@@ -19,7 +19,15 @@
 ## 1. ใช้งาน QuickType.io เพื่อสร้าง Class ข้อมูล
 
 1. เปิดเว็บ [quicktype.io](https://app.quicktype.io/) และกดปุ่ม Open Quick Type เพื่อเริ่มใช้งาน
+
+<img width="1119" alt="2021-08-16_21-48-16" src="https://user-images.githubusercontent.com/85179/129587221-62b6ec67-13bf-47e5-b296-909458fcc110.png">
+
+
 2. ด้านขวาเราจะตั้งชื่อ Class ว่า **NewsData** และเลือก **Source type** เป็น **JSON** 
+
+<img width="640" alt="2021-08-16_22-01-39" src="https://user-images.githubusercontent.com/85179/129587119-82becf9a-2954-4726-972a-bb4054b0ec49.png">
+
+
 3. คัดลอก JSON ที่ได้จากจากการ[เรียก Web API Route **/news**](../web-api-part/5-test-api.md) หรือจะใช้ตัวอย่างจากด้านล่างนี้ก็ได้ มาวางด้านล่างชื่อ Class
 
 ```json
@@ -31,14 +39,18 @@
 ]
 ```
 
+<img width="640" alt="2021-08-16_22-01-39" src="https://user-images.githubusercontent.com/85179/129587166-bd01b337-e1c9-4034-b546-49698f6ff583.png">
+
+
 4. QuickType จะสร้างโค้ดตัวแทนของ JSON ทางด้านขวา ซึ่งเราใช้ตัวเลือกด้านขวาสุด
 
    1. เลือกภาษา Dart
    2. กด **Copy Code** 
 
+<img width="853" alt="2021-08-16_22-01-49" src="https://user-images.githubusercontent.com/85179/129586903-6584db48-394d-46ba-8ddc-2d6f08929df8.png">
+
+
 5. เปิดไฟล์​ **lib/news_data.dart** ให้เราวางโค้ดที่ copy มาลงไปแทนที่โค้ดเดิม
-
-
 6. จากนั้นให้เราเพิ่ม keyword `required` ไว้ด้านหน้า parameter ของ construtor NewsData
 
 ```dart
