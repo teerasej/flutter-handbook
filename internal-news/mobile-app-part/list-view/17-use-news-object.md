@@ -12,7 +12,7 @@
 
 ```dart
 // เนื่องจากเราประกาศ NewsData ไว้ที่ไฟล์ news_data.dart การเรียกใช้ NewsData ในไฟล์อื่น ต้องมีการเขียนคำสั่ง import 
-import 'package:news_app/news_data.dart';
+import 'news_data.dart';
 
 // สังเกตว่าประกาศเอาไว้ใน class _HomePageState แต่ไม่ได้เอาไว้ใน method build()
 class _HomePageState extends State<HomePage> {
@@ -71,8 +71,8 @@ body: ListView.separated(
 ```dart
 // lib/home_page.dart
 import 'package:flutter/material.dart';
-import 'package:news_app/create_news_page.dart';
-import 'package:news_app/news_data.dart';
+import 'create_news_page.dart';
+import 'news_data.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

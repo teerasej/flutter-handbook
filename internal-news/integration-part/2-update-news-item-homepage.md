@@ -23,8 +23,8 @@ class _HomePageState extends State<HomePage> {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:news_app/create_news_page.dart';
-import 'package:news_app/news_data.dart';
+import 'create_news_page.dart';
+import 'news_data.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

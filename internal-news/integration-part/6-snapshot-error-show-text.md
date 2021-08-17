@@ -1,17 +1,20 @@
 
-# เช็คการทำงานของ snapshot ถ้าเสร็จสมบูรณ์ให้แสดงข้อความ
+# เช็คการทำงานของ snapshot ถ้ามีข้อผิดพลาดให้แสดงข้อความ
 
 1. เปิดไฟล์ **lib/home_page.dart** 
-2. ใน function builder เราจะเขียนส่วนที่เช็คค่าการทำงานของ Snapshot เพื่อแสดง Widget อื่นเมื่อ snapshot ยืนยันว่าการส่ง request เสร็จสมบูรณ์แล้ว 
+2. ใน function builder เราจะเขียนส่วนที่เช็คค่าการทำงานของ Snapshot เพื่อแสดง Widget เป็นข้อความเมื่อ snapshot พบว่าเกิด error ในการทำงาน
 
 ```dart
 body: FutureBuilder(
           future: http.get(webApi),
           builder: (BuildContext context, AsyncSnapshot<Response> snapshot) {
 
-            // เช็ค .connectionState ของ Snapshot ว่าค่าเป็น done หรือยัง 
+            // เช็ค .hasError ของ Snapshot ว่าถ้าค่าเป็น true ก็แสดงเป็นข้อความที่มีรายละเอียดของของ error ผ่าน .error.toString()
+            if (snapshot.hasError) {
+               return Text('opps... ${snapshot.error.toString()}');
+            }
+
             if (snapshot.connectionState == ConnectionState.done) {
-                // ถ้าใช่ ให้คืนค่า Text Widget จาก Builder function แทน
                 return Text('Got data');
             }
 
@@ -67,6 +70,10 @@ class _HomePageState extends State<HomePage> {
         body: FutureBuilder(
           future: http.get(webApi),
           builder: (BuildContext context, AsyncSnapshot<Response> snapshot) {
+            if (snapshot.hasError) {
+               return Text('opps... ${snapshot.error.toString()}');
+            }
+
             if (snapshot.connectionState == ConnectionState.done) {
               return Text('Got data');
             }
@@ -88,5 +95,6 @@ class _HomePageState extends State<HomePage> {
         );
   }
 }
+
 
 ```

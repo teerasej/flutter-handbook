@@ -1,18 +1,26 @@
 
-# เช็คการทำงานของ snapshot ถ้าเสร็จสมบูรณ์ให้แสดงข้อความ
+# แปลงข้อมูล JSON ที่ได้รับจาก Web API เป็นตัวแปร ด้วย function ที่ได้จาก QuickType
 
 1. เปิดไฟล์ **lib/home_page.dart** 
-2. ใน function builder เราจะเขียนส่วนที่เช็คค่าการทำงานของ Snapshot เพื่อแสดง Widget อื่นเมื่อ snapshot ยืนยันว่าการส่ง request เสร็จสมบูรณ์แล้ว 
+2. ใน function builder เราจะเขียนส่วนที่เช็คค่าการทำงานของ Snapshot เพื่อแสดง Widget เป็นข้อความเมื่อ snapshot พบว่าเกิด error ในการทำงาน
 
 ```dart
 body: FutureBuilder(
           future: http.get(webApi),
           builder: (BuildContext context, AsyncSnapshot<Response> snapshot) {
+            if (snapshot.hasError) {
+              return Text('opps... ${snapshot.error.toString()}');
+            }
 
-            // เช็ค .connectionState ของ Snapshot ว่าค่าเป็น done หรือยัง 
             if (snapshot.connectionState == ConnectionState.done) {
-                // ถ้าใช่ ให้คืนค่า Text Widget จาก Builder function แทน
-                return Text('Got data');
+
+              // ดึงข้อมูลออกจาก snapshot.data?.body เป็นข้อความ string เก็บไว้ในตัวแปรชื่อ jsonFromAPI
+              var jsonFromAPI = snapshot.data?.body as String;
+
+              // เรียกใช้งาน function newsDataFromJson() จาก news_data.dart จะได้เป็น List มาใช้งาน
+              var newsItems = newsDataFromJson(jsonFromAPI);
+
+              return Text('Got data');
             }
 
             return CircularProgressIndicator();
@@ -22,7 +30,7 @@ body: FutureBuilder(
 
 ## ไฟล์ lib/home_page.dart ที่ปรับปรุงแล้ว 
 
-```dart 
+```dart
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'create_news_page.dart';
@@ -40,7 +48,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   //List<String> newsItems = ['abc', 'def', 'ghi'];
 
-  Uri webApi = Uri.parse('http://3242504417bb.ngrok.io/news');
+  Uri webApi = Uri.parse('http://c8d8b4dc6a7d.ngrok.io/news');
 
   List<NewsData> newsItems = [
     NewsData(id: '1', content: 'abc'),
@@ -67,7 +75,14 @@ class _HomePageState extends State<HomePage> {
         body: FutureBuilder(
           future: http.get(webApi),
           builder: (BuildContext context, AsyncSnapshot<Response> snapshot) {
+            if (snapshot.hasError) {
+              return Text('opps... ${snapshot.error.toString()}');
+            }
+
             if (snapshot.connectionState == ConnectionState.done) {
+              var jsonFromAPI = snapshot.data?.body as String;
+              var newsItems = newsDataFromJson(jsonFromAPI);
+
               return Text('Got data');
             }
 

@@ -43,8 +43,8 @@ body: FutureBuilder(
 ```dart 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
-import 'package:news_app/create_news_page.dart';
-import 'package:news_app/news_data.dart';
+import 'create_news_page.dart';
+import 'news_data.dart';
 
 import 'package:http/http.dart' as http;
 
