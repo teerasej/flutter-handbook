@@ -31,5 +31,5 @@
 
 ## การเสริมการทำงานของ Web API
 
-1.  [เปิดที่อยู่ของ Web API ด้วย ngrok](expose-with-ngrok/16-expose-api-ngrok.md)
-2.  [เปิดการใช้งาน Cors](expose-with-ngrok/17-enable-cors.md)
+16.  [เปิดที่อยู่ของ Web API ด้วย ngrok](expose-with-ngrok/16-expose-api-ngrok.md)
+17.  [เปิดการใช้งาน Cors](expose-with-ngrok/17-enable-cors.md)
