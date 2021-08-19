@@ -18,6 +18,8 @@
 
 ## 1. ใช้งาน QuickType.io เพื่อสร้าง Class ข้อมูล
 
+- ถ้ายังไม่มีไฟล์ **lib/news_data.dart** ให้ทำการสร้างไฟล์ดังกล่าวขึ้นมา
+
 1. เปิดเว็บ [quicktype.io](https://app.quicktype.io/) และกดปุ่ม Open Quick Type เพื่อเริ่มใช้งาน
 
 <img width="1119" alt="2021-08-16_21-48-16" src="https://user-images.githubusercontent.com/85179/129587221-62b6ec67-13bf-47e5-b296-909458fcc110.png">
