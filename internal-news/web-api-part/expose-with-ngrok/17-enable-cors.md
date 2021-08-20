@@ -34,7 +34,7 @@ app.use(express.json())
 app.use(cors())
 ```
 
-## โค้ดไฟล์ app.json ที่ปรับปรุงแล้ว
+## โค้ดไฟล์ app.js ที่ปรับปรุงแล้ว
 
 ```js
 const cors = require('cors')
