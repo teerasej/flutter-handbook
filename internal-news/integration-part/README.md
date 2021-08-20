@@ -3,7 +3,7 @@
 
 ## เปิดที่อยู่ของ Web API กับ random domain
 
-1.  [เปิดที่อยู่ของ Web API ด้วย ngrok](expose-with-ngrok/16-expose-api-ngrok.md)
+1.  [เปิดที่อยู่ของ Web API ด้วย ngrok](../web-api-part/expose-with-ngrok/16-expose-api-ngrok.md)
 
 ## สร้าง Class ข้อมูล สำหรับรับข้อมูล JSON
 
