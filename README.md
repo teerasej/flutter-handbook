@@ -53,6 +53,7 @@
 
 - [Extension Method](extension-method/README.md)
 - [Provider: Shopping Cart Demo](shopping-cart/README.md)
+- [Method Channel](method-channel/README.md)
 
 ## Publishing Application 
 
