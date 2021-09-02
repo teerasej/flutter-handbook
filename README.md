@@ -32,9 +32,6 @@
 
 - [Contact App with Tab & Stack Navigation](navigation-1/readme.md)
 
-## Note App with JWT Authentication
-
-- [Workshop](web-api-auth/readme.md)
 
 ## Contact App Workshop
 
@@ -44,23 +41,18 @@
 - [ระบบ Navigation](navigation.md)
 - [Web API](web-api.md)
 
-## Barcode Scanner 
 
-- [Workshop](barcode-scanner/readme.md)
+## API Workshop
 
+- [Barcode Scanner ](barcode-scanner/readme.md)
+- [Location](geolocation/readme.md)
+- [SQLite - Note App](sqlite-note-app/readme.md)
+- [Note App with JWT Authentication](web-api-auth/readme.md)
 
-## Location
+## Advanced 
 
-- [Workshop](geolocation/readme.md)
-
-## SQLite - Note App
-
-- [Workshop](sqlite-note-app/readme.md)
-
-## Provider 
-
-- [Shopping Cart Demo](shopping-cart/README.md)
-
+- [Extension Method](extension-method/README.md)
+- [Provider: Shopping Cart Demo](shopping-cart/README.md)
 
 ## Publishing Application 
 
