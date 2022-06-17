@@ -22,7 +22,7 @@ git clone -b stater https://github.com/teerasej/nextflow_flutter_scanner
 ```yaml
 dependencies:
   ...
-  flutter_barcode_scanner: ^1.0.2
+  flutter_barcode_scanner: ^2.0.0
 ```
 
 - **[flutter_barcode_scanner](https://pub.dev/packages/flutter_barcode_scanner)** สำหรับเรียกใช้ตัวแสกน และอ่านค่ากลับมาใช้งาน
@@ -38,7 +38,7 @@ dependencies:
 <img width="373" alt="2021-03-06_17-21-22" src="https://user-images.githubusercontent.com/85179/110203955-46f28500-7ea3-11eb-8fd7-f649ba00c319.png">
 
 
-เลือกโปรเจค Runner > Project > Runner > กำหนดค่า **iOS Deployment Target** เป็น **11**
+เลือกโปรเจค Runner > Project > Runner > กำหนดค่า **iOS Deployment Target** เป็น **12**
 
 <img width="773" alt="2021-03-06_17-16-20" src="https://user-images.githubusercontent.com/85179/110203997-67224400-7ea3-11eb-9271-78c630c9e07f.png">
 

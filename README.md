@@ -30,7 +30,29 @@
 
 ## Contact App with Navigation
 
+Learning following topic:
+
+
 - [Contact App with Tab & Stack Navigation](navigation-1/readme.md)
+
+## Random User with Provider
+
+Learn following topics in this workshop: 
+- Working with Web API
+- Working with Asynchronous in Dart
+- State Management with Provider
+
+### Starter Project clone command
+
+```
+git clone -b start https://github.com/teerasej/flutter_random_user_with_provider/
+```
+
+### Completed Project clone command:
+
+```
+git clone https://github.com/teerasej/flutter_random_user_with_provider/
+```
 
 
 ## Contact App Workshop
