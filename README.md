@@ -42,6 +42,8 @@ Learn following topics in this workshop:
 - Working with Asynchronous in Dart
 - State Management with Provider
 
+[Go to Project](random_user_with_provider/README.md)
+
 ### Starter Project clone command
 
 ```
