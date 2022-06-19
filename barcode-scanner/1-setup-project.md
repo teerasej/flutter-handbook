@@ -7,7 +7,7 @@
 - หรือใช้คำสั่ง clone โปรเจคด้วย git ด้านล่างก็ได้ 
 
 ```bash
-git clone -b stater https://github.com/teerasej/nextflow_flutter_scanner
+git clone -b starter https://github.com/teerasej/nextflow_flutter_scanner
 ```
 
 เปิดโปรเจคแล้วรันคำสั่ง `flutter package get` ให้เรียบร้อย
