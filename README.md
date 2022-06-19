@@ -35,26 +35,15 @@ Learning following topic:
 
 - [Contact App with Tab & Stack Navigation](navigation-1/readme.md)
 
-## Random User with Provider
+## Provider
 
 Learn following topics in this workshop: 
 - Working with Web API
 - Working with Asynchronous in Dart
 - State Management with Provider
 
-[Go to Project](random_user_with_provider/README.md)
-
-### Starter Project clone command
-
-```
-git clone -b start https://github.com/teerasej/flutter_random_user_with_provider/
-```
-
-### Completed Project clone command:
-
-```
-git clone https://github.com/teerasej/flutter_random_user_with_provider/
-```
+1. [Random User API with Provider](random_user_with_provider/README.md)
+2. [Note App with provider](https://github.com/teerasej/oppo_my_note/tree/complete-provider)
 
 
 ## Contact App Workshop
