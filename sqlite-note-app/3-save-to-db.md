@@ -90,17 +90,3 @@ void saveNewNote(String text) async {
     });
   }
 ```
-
-onPressed: () async {
-
-    var location = Location();
-    var currentLocation = await location.getLocation();
-
-    var locationText = '${currentLocation['latitude']} ${currentLocation['longitude']}';
-
-    print(locationText);
-    setState(() {
-        _currentLocationText = locationText;
-    });
-},
-```
