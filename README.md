@@ -61,6 +61,7 @@ Learn following topics in this workshop:
 - [Location](geolocation/readme.md)
 - [SQLite - Note App](sqlite-note-app/readme.md)
 - [Note App with JWT Authentication](web-api-auth/readme.md)
+- [Firebase setup](firebase-firestore/README.md)
 
 ## Advanced 
 
