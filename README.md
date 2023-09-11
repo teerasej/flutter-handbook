@@ -4,23 +4,23 @@
 - [Slide: Flutter](https://www.dropbox.com/s/gcnu2vxw9h2fzzg/Flutter%20-%20Training.pdf?dl=0)
 - [Slide: Dart for Beginner](https://www.dropbox.com/s/591x64sxpn42zcd/Flutter%20-%20Training%20-%20Dart%20Beginner.pdf?dl=0)
 
-1. [Setup](setup.md)
-2. [วิธีสร้างโปรเจคแอพใหม่](run-and-debug-app.md)
-3. [วิธีเลือกอุปกรณ์ทดสอบเป้าหมาย](select-target-device.md)
-4. [วิธีการ debug โปรเจค](debug-app.md)
+1. [Setup](contents/setup.md)
+2. [วิธีสร้างโปรเจคแอพใหม่](contents/run-and-debug-app.md)
+3. [วิธีเลือกอุปกรณ์ทดสอบเป้าหมาย](contents/select-target-device.md)
+4. [วิธีการ debug โปรเจค](contents/debug-app.md)
 
 
 ## เรียนรู้จากการสร้างไหม่
 
-- [Build from Scratch 1](scratch-1.md)
-- [Build from Scratch 2 - สร้าง Widget ใช้เองแบบ Stateless](scratch-2.md)
-- [Build from Scratch 3 - สร้าง Widget ใช้เองแบบ Stateful](scratch-3.md)
-- [Do Discount](do-discount.md)
+- [Build from Scratch 1](contents/scratch-1.md)
+- [Build from Scratch 2 - สร้าง Widget ใช้เองแบบ Stateless](contents/scratch-2.md)
+- [Build from Scratch 3 - สร้าง Widget ใช้เองแบบ Stateful](contents/scratch-3.md)
+- [Do Discount](contents/do-discount.md)
 
 
 ## Major Workshop
 
-- [Internal News](internal-news/README.md)
+- [Internal News](contents/internal-news/README.md)
 
 ## Form
 
@@ -32,7 +32,7 @@
 
 Learning following topic:
 
-- [Contact App with Tab & Stack Navigation](navigation-1/readme.md)
+- [Contact App with Tab & Stack Navigation](contents/navigation-1/readme.md)
 
 ## State Management: Provider
 
@@ -41,7 +41,7 @@ Learn following topics in this workshop:
 - Working with Asynchronous in Dart
 - State Management with Provider
 
-1. [Random User API with Provider](random_user_with_provider/README.md)
+1. [Random User API with Provider](contents/random_user_with_provider/README.md)
 2. [Note App with provider](https://github.com/teerasej/oppo_my_note/tree/complete-provider)
 
 
@@ -49,24 +49,24 @@ Learn following topics in this workshop:
 
 สร้างโปรเจค `contact_app`
 
-- [ListView Widget](listview.md)
-- [ระบบ Navigation](navigation.md)
-- [Web API](web-api.md)
+- [ListView Widget](contents/listview.md)
+- [ระบบ Navigation](contents/navigation.md)
+- [Web API](contents/web-api.md)
 
 
 ## API Workshop
 
-- [Barcode Scanner ](barcode-scanner/readme.md)
-- [Location](geolocation/readme.md)
-- [SQLite - Note App](sqlite-note-app/readme.md)
-- [Note App with JWT Authentication](web-api-auth/readme.md)
-- [Firebase setup](firebase-firestore/README.md)
+- [Barcode Scanner ](contents/barcode-scanner/readme.md)
+- [Location](contents/geolocation/readme.md)
+- [SQLite - Note App](contents/sqlite-note-app/readme.md)
+- [Note App with JWT Authentication](contents/web-api-auth/readme.md)
+- [Firebase setup](contents/firebase-firestore/README.md)
 
 ## Advanced 
 
-- [Extension Method](extension-method/README.md)
-- [Provider: Shopping Cart Demo](shopping-cart/README.md)
-- [Method Channel](method-channel/README.md)
+- [Extension Method](contents/extension-method/README.md)
+- [Provider: Shopping Cart Demo](contents/shopping-cart/README.md)
+- [Method Channel](contents/method-channel/README.md)
 
 ## Publishing Application 
 
