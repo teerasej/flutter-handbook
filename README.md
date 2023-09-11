@@ -18,9 +18,9 @@
 - [Do Discount](do-discount.md)
 
 
-## Internal News
+## Major Workshop
 
-- [Workshop](internal-news/README.md)
+- [Internal News](internal-news/README.md)
 
 ## Form
 
@@ -32,10 +32,9 @@
 
 Learning following topic:
 
-
 - [Contact App with Tab & Stack Navigation](navigation-1/readme.md)
 
-## Provider
+## State Management: Provider
 
 Learn following topics in this workshop: 
 - Working with Web API
