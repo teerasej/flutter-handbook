@@ -29,15 +29,7 @@ flutter: hello...
 
 1. ลบ `print('hello...');` ออกจาก `main()` 
 2. เขียนคำสั่ง `import 'package:flutter/material.dart';` เพื่อเรียกใช้คำส่ังที่จำเป็นในการสร้าง Material App
-3. ใน `main()` เขียนคำสั่ง `runApp()`
-
-```dart
-runApp(MaterialApp(
-    title: 'My Flutter'
-));
-```
-
-ไฟล์สำเร็จจะเป็นแบบด้านล่างนี้ 
+3. ใน `main()` method เขียนคำสั่ง `runApp()`
 
 ```dart
 import 'package:flutter/material.dart'
@@ -45,27 +37,34 @@ import 'package:flutter/material.dart'
 void main() {
 	runApp(MaterialApp(
         title: 'My Flutter',
+        // กำหนดข้อความแสดงขึ้นมาในแอพ
         home: Text('hello')
     ));
 }
 ```
 
-เจ้านี่คือตัวโครงแอพพลิเคชั่นของเรา สังเกตผลว่าเกิดอะไรขึ้นถ้าเรารันทดสอบแอพตอนนี้ 
+- เจ้านี่คือตัวโครงแอพพลิเคชั่นของเรา สังเกตผลว่าเกิดอะไรขึ้นถ้าเรารันทดสอบแอพตอนนี้ 
+- และเราอาจจะต้องใช้การ reload เพื่อที่จะทำให้เห็นการแก้ไขโค้ดของเราในพรีวิว
 
 ## 5. สร้างหน้าแรกของแอพพลิเคชั่น 
-
-ให้เพิ่มส่วนของ `:home` เข้าไปใน `MeterialApp()`
+เราจะเริ่มใช้ Scaffold widget เข้าไปใน `:home`  ของ `MeterialApp()`
 
 ```dart
-runApp(MaterialApp(
-    title: 'My Flutter',
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text('Counter'),
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      title: 'My Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Counter'),
+        ),
+        body: Text('hello'),
       ),
-      body: Text('hello'),
     ),
-  ));
+  );
+}
 ```
 
 จากนั้นให้รันทดสอบแอพพลิเคชั่น 
@@ -78,12 +77,28 @@ runApp(MaterialApp(
 
 ให้เพิ่ม `theme:` เข้าไปใน `MaterialApp()` 
 
-runApp(MaterialApp(
-    ...
-    theme: ThemeData(
-      primarySwatch: Colors.red
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      // เพิ่ม theme เข้าไปในแอพ
+      theme: ThemeData(
+        // กำหนด swatch สีหลัก
+        primarySwatch: Colors.purple,
+      ),
+      title: 'My Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Counter'),
+        ),
+        body: Text('hello'),
+      ),
     ),
-	...
+  );
+}
+```
 
 รันทดสอบแอพพลิเคชั่น และให้สังเกตการเปลี่ยนแปลงของแอพพลิเคชั่น
 
@@ -96,39 +111,59 @@ Property ชื่อ `theme:` ของ `MaterialApp()` นั้นรับ�
 จากนั้นทดสอบ ค่า theme อีกแบบหนึ่ง
 
 ```dart
-runApp(MaterialApp(
-    ...
-    theme: ThemeData(
-      brightness: Brightness.dark
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+
+        // กำหนดใช้ theme สีสำหรับ dark mode
+        brightness: Brightness.dark,
+      ),
+      title: 'My Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Counter'),
+        ),
+        body: Text('hello'),
+      ),
     ),
-	...
+  );
+}
+
 ```
 
 รันทดสอบแอพพลิเคชั่น ให้สังเกตการเปลี่ยนแปลงของแอพพลิเคชั่น 
 
 นี่คือ Dark theme นั่นเอง (ใช้ได้ใน Android 10 แล้วนะ)
 
+
 ## 7. ไฟล์สมบูรณ์
 
-`lib/main.dart`
-
 ```dart
+// lib/main.dart
+
 import 'package:flutter/material.dart';
 
 void main() {
-	runApp(MaterialApp(
-        title: 'My Flutter',
-        theme: ThemeData(
-            primarySwatch: Colors.blue,
-            brightness: Brightness.dark
+  runApp(
+    MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+        brightness: Brightness.dark,
+      ),
+      title: 'My Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Counter'),
         ),
-        home: Scaffold(
-            appBar: AppBar(
-                title: Text('Counter'),
-            ),
-            body: Text('hello'),
-        ),
-    ));
+        body: Text('hello'),
+      ),
+    ),
+  );
 }
+
 ```
 
