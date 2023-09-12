@@ -1,8 +1,7 @@
 
 # Flutter Handbook
 
-- [Slide: Flutter](https://www.dropbox.com/s/gcnu2vxw9h2fzzg/Flutter%20-%20Training.pdf?dl=0)
-- [Slide: Dart for Beginner](https://www.dropbox.com/s/591x64sxpn42zcd/Flutter%20-%20Training%20-%20Dart%20Beginner.pdf?dl=0)
+- [Slide: Flutter](https://nextflowth-my.sharepoint.com/:b:/g/personal/teerasej_nextflowth_onmicrosoft_com/Effrugg78M5HtpnycBxwJaABTiGnUuZMSEFrBcXGdpj_DA?e=dprgnC)
 
 1. [Setup](contents/setup.md)
 2. [วิธีสร้างโปรเจคแอพใหม่](contents/run-and-debug-app.md)
