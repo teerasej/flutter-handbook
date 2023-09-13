@@ -10,7 +10,7 @@
 
 import 'package:get/get.dart';
 import 'package:fast_news_app/domain/entities/news_model/news_model.dart';
-import 'package:fast_news_app/domain/usecases/load_news_use_case.dart';
+import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
 
 // ทำการ extends GetxController เพื่อให้สามารถทำงานเข้ากับ Get.put ได้
 class NewsController extends GetxController {
