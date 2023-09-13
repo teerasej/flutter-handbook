@@ -37,3 +37,9 @@ fast_news_app
 ## Part 5 - เชื่อมต่อ Web API 
 
 17. [สร้างส่วน News Repo Web API ใช้งาน](17-get-connect.md)
+
+## Part 6 - เชื่อมต่อ Firebase
+
+18. [Setup Firebase ก่อน](18-setup-firebase.md)
+19. [สร้าง Sign In use case](19-sign-in-use-case.md)
+20. [สร้าง Sign Up use case](20-sign-up-use-case.md)
