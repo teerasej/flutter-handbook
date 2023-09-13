@@ -12,7 +12,8 @@ import 'package:fast_news_app/domain/entities/news_model/news_model.dart';
 
 class GetNewsUseCase {
 
-  final NewsRepository repository;
+  // ส่วนที่เก็บ repository
+  final NewsRepositoryAbstract repository;
 
   // กำหนด News Repository
   GetNewsUseCase(this.repository);

@@ -9,7 +9,6 @@
 import 'package:flutter/material.dart';
 
 // import ส่วนประกอบจากส่วนต่างๆ มารวมเป็น controller ที่ทำงานได้
-import 'package:fast_news_app/data/datasources/news_data_source.dart';
 import 'package:fast_news_app/data/repositories/news_repository.dart';
 import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
 import 'package:fast_news_app/presentations/controllers/news_controller.dart';
@@ -22,9 +21,14 @@ class NewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    // ทำการสร้าง NewsController เก็บไว้ใน Get
+    // ทำการสร้าง NewsController เก็บไว้ใน GetX
     final newsController = Get.put<NewsController>(
-        NewsController(GetNewsUseCase(NewsRepository(NewsDataSource()))));
+        NewsController(
+          GetNewsUseCase(
+            NewsRepositoryMockup()
+          ),
+        ),
+      );
 
     // เรียกใช้ loadNews() เพื่อ set การทำงานของ state
     newsController.loadNews();
@@ -71,21 +75,19 @@ class NewsPage extends StatelessWidget {
 ทดสอบหน่วงเวลา
 
 ```dart
-
-// lib/data/datasources/news_data_source.dart
-
+// lib/data/repositories/news_repository.dart
+import 'package:fast_news_app/data/repositories/news_repository_abstract.dart';
 import 'package:fast_news_app/domain/entities/news_model/news.dart';
 import 'package:fast_news_app/domain/entities/news_model/news_model.dart';
 
-class NewsDataSource {
 
-  Future<NewsModel> fetchNews() async {
-    
-    // ส่วนนี้คือการเรียกใช้งาน Web API เว้นไว้ก่อน
+class NewsRepositoryMockUp implements NewsRepositoryAbstract {
 
-    // สร้าง กลไกดีเลย์เวลา 4 วิ ก่อนทำงานต่อ
+  @override
+  Future<NewsModel> getNews() async {
+
+     // สร้าง กลไกดีเลย์เวลา 4 วิ ก่อนทำงานต่อ
     await Future.delayed(const Duration(seconds: 4));
-
 
     return NewsModel(news: [
       News(

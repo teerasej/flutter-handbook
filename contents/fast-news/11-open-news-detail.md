@@ -6,7 +6,6 @@
 ```dart
 // lib/presentations/screens/news/news_page.dart
 import 'package:flutter/material.dart';
-import 'package:fast_news_app/data/datasources/news_data_source.dart';
 import 'package:fast_news_app/data/repositories/news_repository.dart';
 import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
 import 'package:fast_news_app/presentations/controllers/news_controller.dart';

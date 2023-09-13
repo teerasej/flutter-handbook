@@ -17,8 +17,7 @@ fast_news_app
 
 4. [ตัวอย่าง json](4-json-example.md) 
 5. [การสร้าง Model Class ด้วย JsonToDart VSCode Extension](5-json-to-dart.md)
-6. [สร้าง Data Source สำหรับจัดการโค้ดส่วนติดต่อกับ Web API](6-create-data-source.md)
-7. [สร้าง Data Repository สำหรับเป็นตัวแทนของ Data ไว้เรียกใช้ใน Application](7-create-data-repository.md)
+6. [สร้าง Data Repository สำหรับจัดการโค้ดส่วนติดต่อกับ Web API](6-create-data-repository.md)
 
 ## Part 3 - Domain use case และ Controller
 
@@ -30,9 +29,11 @@ fast_news_app
 
 ## Part 4 - Form และ Controller
 
-13. [สร้าง Sign In page และ Sign up page พร้อมแบบฟอร์ม](13-crate-sign-in-page.md)
+13. [สร้าง Sign In page และ Sign up page พร้อมแบบฟอร์ม](13-create-sign-in-page.md)
 14. [เปิดหน้า Sign up page จากหน้า Sign in](14-open-create-account.md) 
 15. [สร้าง Controller เพื่อใช้งานกับแบบฟอร์มใน Sign in และ Sign up page](15-auth-controller.md)
 16. [นำ AuthController มาใช้งานกับหน้า Sign in และ Sign up page](16-setup-auth-controller.md)
 
+## Part 5 - เชื่อมต่อ Web API 
 
+17. [สร้างส่วน News Repo Web API ใช้งาน](17-get-connect.md)

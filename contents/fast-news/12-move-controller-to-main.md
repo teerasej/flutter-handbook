@@ -13,7 +13,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 // import ส่วนประกอบของแต่ละ layer
-import 'package:fast_news_app/data/datasources/news_data_source.dart';
 import 'package:fast_news_app/data/repositories/news_repository.dart';
 import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
 import 'package:fast_news_app/presentations/controllers/news_controller.dart';
@@ -33,7 +32,11 @@ class MyApp extends StatelessWidget {
 
     // เพิ่ม News Controller เข้าระบบ Get
     Get.put<NewsController>(
-      NewsController(GetNewsUseCase(NewsRepository(NewsDataSource()))),
+      NewsController(
+        GetNewsUseCase(
+          NewsRepositoryMockup(),
+        ),
+      ),
     );
 
     return GetMaterialApp(
