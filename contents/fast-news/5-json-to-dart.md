@@ -16,17 +16,17 @@
 1. ใน Visual Studio Code ให้เปิด Command Palette (Ctrl + P, Cmd + P) 
 2. เลือกคำสั่ง **JSON to Dart: From Clipboard** และทำตามขั้นตอน
    1. ตั้งชื่อ base class: **NewsModel**
-   2. Implement Equality Operator: No
-   3. You you want to use immutable class: No
-   4. Implement `toString`: No
-   5. Implement `copyWith`: No
-   6. Suffix Json method: Json
-   7. Implement Map JSON Method...: No
-   8. สร้างโฟลเดอร์ `lib/models` และเลือก directory นี้
+   2. Implement Equality Operator: **No**
+   3. You you want to use immutable class: **No**
+   4. Implement `toString`: **No**
+   5. Implement `copyWith`: **No**
+   6. Suffix Json method: **Json**
+   7. Implement Map JSON Method...: **No**
+   8. สร้างโฟลเดอร์ `lib/domain/entities/` และเลือก directory นี้
 
 จะได้ไฟล์มา 2 ไฟล์ 
 
-### lib/models/news_model/news_model.dart
+### lib/domain/entities/news_model/news_model.dart
 
 ```dart
 import 'package:get/get.dart';
@@ -50,7 +50,7 @@ class NewsModel {
 }
 
 ```
-### lib/models/news_model/news.dart
+### lib/domain/entities/news_model/news.dart
 
 ```dart
 class News {

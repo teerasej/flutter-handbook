@@ -19,7 +19,7 @@
 
 ## Major Workshop
 
-- [Fast API](contents/fast-news/README.md)
+- [Fast News](contents/fast-news/README.md)
 - [Internal News](contents/internal-news/README.md)
 
 ## Form
