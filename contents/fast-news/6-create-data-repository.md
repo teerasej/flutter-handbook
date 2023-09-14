@@ -9,7 +9,7 @@
 โดยในที่นี้เราจะสร้าง Abstract class เป็นตัวต้นแบบของ Repo แบบต่างๆ 
 
 ```dart
-import 'package:fast_news_app/domain/entities/news_model/news_model.dart';
+import 'package:fast_news_app/data/repositories/news_repository_abstract.dart';
 
 abstract class NewsRepositoryAbstract {
 
