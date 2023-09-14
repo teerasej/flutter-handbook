@@ -2,6 +2,7 @@
 # Flutter Handbook
 
 - [Slide: Flutter](https://nextflowth-my.sharepoint.com/:b:/g/personal/teerasej_nextflowth_onmicrosoft_com/Effrugg78M5HtpnycBxwJaABTiGnUuZMSEFrBcXGdpj_DA?e=dprgnC)
+- [Slide: Object-Oriented in Dart & Flutter](https://nextflowth-my.sharepoint.com/:b:/g/personal/teerasej_nextflowth_onmicrosoft_com/EbnWPj_mVrVBtmtrgI_7DkcBH7MSRD9i6Egg54GSLIs-Qw?e=i88sed)
 
 1. [Setup](contents/setup.md)
 2. [วิธีสร้างโปรเจคแอพใหม่](contents/run-and-debug-app.md)
