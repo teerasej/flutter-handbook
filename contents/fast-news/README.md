@@ -50,4 +50,8 @@ fast_news_app
 ## Part 7 - Deep Links - Android
 
 24. [สร้างไฟล์ assetlinks.json](24-create-assetlinks.md)
-25. [Setup Deep Link](25-setup-deep-link.md)
+25. [Setup Deep Link](25-setupw-deep-link.md)
+
+## Part 8 - Deep Links - iOS
+
+26. [สร้างไฟล์ apple-app-site-association](26-apple-app-site-association.md)
