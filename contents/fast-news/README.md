@@ -46,3 +46,8 @@ fast_news_app
 21. [สร้าง Sign Up use case](21-sign-up-use-case.md)
 22. [สร้างกลไกเช็คการ sign in ของ user](22-validate-user-sign-in.md)
 23. [สร้าง และเรียกใช้ Sign out Use case](23-sign-out-use-case.md)
+
+## Part 7 - Deep Links - Android
+
+24. [สร้างไฟล์ assetlinks.json](24-create-assetlinks.md)
+25. [Setup Deep Link](25-setup-deep-link.md)
