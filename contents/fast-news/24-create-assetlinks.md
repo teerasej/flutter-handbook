@@ -6,6 +6,12 @@
 ซึ่งเราต้องอัพโหลดไฟล์ชื่อ **assetlinks.json** ไปไว้ใน root directory ของ hosting ที่ผูกกับ Domain ดังกล่าว
 
 
+โดยไฟล์ต้องสามารถเข้าถึงได้ตาม Pattern ต่อไปนี้ 
+
+```
+<domain name>/.well-known/assetlinks.json
+```
+
 ## A. ตัวอย่างไฟล์ assetlinks.json
 
 ```json
