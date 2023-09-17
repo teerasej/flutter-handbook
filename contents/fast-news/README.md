@@ -40,6 +40,7 @@ fast_news_app
 
 ## Part 6 - เชื่อมต่อ Firebase
 
-18. [Setup Firebase ก่อน](18-setup-firebase.md)
-19. [สร้าง Sign In use case](19-sign-in-use-case.md)
-20. [สร้าง Sign Up use case](20-sign-up-use-case.md)
+18. [กำหนดชื่อแอพ และ appId](18-app-name-app-id.md)
+19. [Setup Firebase](19-setup-firebase.md)
+20. [สร้าง Sign In use case](20-sign-in-use-case.md)
+21. [สร้าง Sign Up use case](21-sign-up-use-case.md)
