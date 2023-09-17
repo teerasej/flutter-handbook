@@ -44,3 +44,5 @@ fast_news_app
 19. [Setup Firebase](19-setup-firebase.md)
 20. [สร้าง Sign In use case](20-sign-in-use-case.md)
 21. [สร้าง Sign Up use case](21-sign-up-use-case.md)
+22. [สร้างกลไกเช็คการ sign in ของ user](22-validate-user-sign-in.md)
+23. [สร้าง และเรียกใช้ Sign out Use case](23-sign-out-use-case.md)
