@@ -1,10 +1,6 @@
 
 # Setup Deep Link
 
-ทดสอบ
-- https://nextflow.in.th
-- https://nextflow.in.th/app/1234
-- https://nextflow.in.th/news/detail
+## ทดสอบ
 
-- [fast new](fastnews://news)
-- [fast new:1234](fastnews://news/1234)
+[คลิกเปิดเว็บนี้ในมือถือที่ติดตั้งแอพ](https://ashy-forest-0a270cf10.3.azurestaticapps.net/) และทดสอบการทำงาน
