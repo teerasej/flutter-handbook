@@ -29,4 +29,4 @@ buildscript {
 }
 ```
 
-เพราะมีเรื่องของ compatability ระหว่าง gradle กับ google-service ครับ
+เพราะมีเรื่องของ compatability ระหว่าง gradle กับ google-service ้อ้างอิงจาก https://stackoverflow.com/q/72224454 
