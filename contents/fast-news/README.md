@@ -44,9 +44,9 @@ fast_news_app
 
 18. [กำหนดชื่อแอพ และ appId](18-app-name-app-id.md)
 19. [Setup Firebase](19-setup-firebase.md)
-20. [สร้าง Sign In use case](20-sign-in-use-case.md)
-21. [สร้าง Sign Up use case](21-sign-up-use-case.md)
-22. [สร้างกลไกเช็คการ sign in ของ user](22-validate-user-sign-in.md)
+20. [สร้าง Sign in use case](20-sign-in-use-case.md)
+21. [สร้าง Sign up use case](21-sign-up-use-case.md)
+22. [สร้างกลไกเช็คการ Sign in ของ user](22-validate-user-sign-in.md)
 23. [สร้าง และเรียกใช้ Sign out Use case](23-sign-out-use-case.md)
 
 ## Part 7 - Deep Links - Android
