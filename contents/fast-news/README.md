@@ -1,5 +1,5 @@
 
-# Fast News - Day 2
+# Fast News - Day 3
 
 สร้างโปรเจคใหม่ชื่อ 
 
