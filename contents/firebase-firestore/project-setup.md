@@ -6,10 +6,22 @@
 
 ## 2. Setup firebase CLI 
 
+### A. MacOS
+
 เปิด terminal และรันคำสั่ง
 
 ```bash
 curl -sL https://firebase.tools | bash
+```
+
+### B. Windows 
+
+[ดาวน์โหลดตัวติดตั้งจากที่นี่](https://firebase.tools/bin/win/instant/latest) 
+
+หรือติดตั้งโดยใช้ Node.js 
+
+```bash
+npm install -g firebase-tools
 ```
 
 เสร็จแล้วรันคำสั่งด้านล่างเพื่อ sign in เข้าใช้งานด้วยบัญชี firebase ของเราเอง
