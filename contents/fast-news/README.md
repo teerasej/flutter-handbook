@@ -52,8 +52,14 @@ fast_news_app
 ## Part 7 - Deep Links - Android
 
 24. [สร้างไฟล์ assetlinks.json](24-create-assetlinks.md)
-25. [Setup Deep Link](25-setup-android-deep-link.md)
+25. [Setup Android's Deep Link](25-setup-android-deep-link.md)
 
 ## Part 8 - Deep Links - iOS
 
-26. [สร้างไฟล์ apple-app-site-association](26-apple-app-site-association.md)
+26. [A. Setup iOS's Custom Scheme](26-setup-ios-deep-link.md)
+27. [ฺB. Setup iOS's Universal Link](27-apple-app-site-association.md)
+
+## Part 9 - Deep Links - Flutter 
+
+28. [Setup และ ใช้งาน App Link](28-app-links.md)
+29. [ปรับให้ News Detail ตอบสนองต่อการเปิด AppLink](29-news-detail-app-link.md)
