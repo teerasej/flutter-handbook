@@ -220,4 +220,4 @@ class SignInPage extends StatelessWidget {
 
 ```
 
-## 5. ทดสอบการทำงานของ Sign in feature
+## 5. ทดสอบการทำงานของ Sign Up feature
