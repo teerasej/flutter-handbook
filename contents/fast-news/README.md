@@ -15,7 +15,7 @@ fast_news_app
 2. [สร้าง News Page ด้วย ListView ](2-create-news-page.md)
 3. [สร้าง News Detail Page](3-create-news-detail.md)
 
-## Part 2 - domain entity กับ data layer
+## Part 2 - Domain layer  กับ data layer
 
 4. [ตัวอย่าง json](4-json-example.md) 
 5. [การสร้าง Model Class ด้วย JsonToDart VSCode Extension](5-json-to-dart.md)
