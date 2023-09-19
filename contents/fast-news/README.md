@@ -63,3 +63,8 @@ fast_news_app
 
 28. [Setup และ ใช้งาน App Link](28-app-links.md)
 29. [ปรับให้ News Detail ตอบสนองต่อการเปิด AppLink](29-news-detail-app-link.md)
+
+## Part 10 - Subscription (with RevenueCat)
+
+30. [Setup RevenueCat Account (iOS)](30-setup-revenue-cat-account.md)
+31. [Setup RevenueCat in Flutter App](31-setup-revenue-cat.md)
