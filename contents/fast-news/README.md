@@ -68,3 +68,15 @@ fast_news_app
 
 30. [Setup RevenueCat Account (iOS)](30-setup-revenue-cat-account.md)
 31. [Setup RevenueCat in Flutter App](31-setup-revenue-cat.md)
+
+## Part 11 - Omise Payment API 
+
+1.  [Setup Omise & Key](32-setup-omise.md)
+2.  [สร้าง entity ของ JSON ที่ต้องใช้งานกับ Omise](33-omise-entity.md)
+3.  [สร้างส่วนของการจ่ายเงินโดยใช้ Omise Key](34-pay-with-omise.md)
+
+
+## Part 12 - Performance Monitoring
+
+- [การใช้งาน DevTool > Performance](35-performance-dev-tool.md)
+- [ทดสอบการใช้งาน DevTool](36-metric.md)
