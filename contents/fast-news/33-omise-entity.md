@@ -208,7 +208,7 @@ class Card {
 
 ## B. Charge
 
-มี 6 ไฟล์ 
+มี 6 ไฟล์ อ้างอิงจาก https://www.omise.co/charges-api
 
 ### 1. omise_charge_response
 

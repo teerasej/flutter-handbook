@@ -9,9 +9,9 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:test_getx_clean/domain/entities/charge_omise_request.dart';
-import 'package:test_getx_clean/domain/entities/omise_charge_response/omise_charge_response.dart';
-import 'package:test_getx_clean/domain/entities/omise_token_response/omise_token_response.dart';
+import 'package:fast_news_app/domain/entities/charge_omise_request.dart';
+import 'package:fast_news_app/domain/entities/omise_charge_response/omise_charge_response.dart';
+import 'package:fast_news_app/domain/entities/omise_token_response/omise_token_response.dart';
 
 class OmiseRepository {
   final connect = Get.find<GetConnect>();
@@ -87,8 +87,8 @@ class OmiseRepository {
 ```dart
 // lib/domain/usecases/charge_omise_use_case.dart
 
-import 'package:test_getx_clean/data/repositories/omise_repository.dart';
-import 'package:test_getx_clean/domain/entities/charge_omise_request.dart';
+import 'package:fast_news_app/data/repositories/omise_repository.dart';
+import 'package:fast_news_app/domain/entities/charge_omise_request.dart';
 
 class ChargeOmiseUseCase {
   final OmiseRepository omiseRepository;
@@ -109,8 +109,8 @@ class ChargeOmiseUseCase {
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_getx_clean/domain/entities/charge_omise_request.dart';
-import 'package:test_getx_clean/domain/usecases/charge_omise_use_case.dart';
+import 'package:fast_news_app/domain/entities/charge_omise_request.dart';
+import 'package:fast_news_app/domain/usecases/charge_omise_use_case.dart';
 
 class OmiseController extends GetxController {
   final formKeyCharge = GlobalKey<FormState>();
@@ -226,9 +226,9 @@ class OmiseController extends GetxController {
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_getx_clean/data/repositories/omise_repository.dart';
-import 'package:test_getx_clean/domain/usecases/charge_omise_use_case.dart';
-import 'package:test_getx_clean/presentations/controllers/omise_controller.dart';
+import 'package:fast_news_app/data/repositories/omise_repository.dart';
+import 'package:fast_news_app/domain/usecases/charge_omise_use_case.dart';
+import 'package:fast_news_app/presentations/controllers/omise_controller.dart';
 
 class OmisePage extends StatelessWidget {
   const OmisePage({super.key});
@@ -341,21 +341,21 @@ class OmisePage extends StatelessWidget {
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_getx_clean/data/repositories/firebase_repository.dart';
-import 'package:test_getx_clean/data/repositories/news_repository_web_api.dart';
-import 'package:test_getx_clean/domain/usecases/get_news_use_case.dart';
-import 'package:test_getx_clean/domain/usecases/sign_out_user_use_case.dart';
-import 'package:test_getx_clean/presentations/controllers/app_link_controller.dart';
+import 'package:fast_news_app/data/repositories/firebase_repository.dart';
+import 'package:fast_news_app/data/repositories/news_repository_web_api.dart';
+import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
+import 'package:fast_news_app/domain/usecases/sign_out_user_use_case.dart';
+import 'package:fast_news_app/presentations/controllers/app_link_controller.dart';
 
-import 'package:test_getx_clean/presentations/controllers/news_controller.dart';
-import 'package:test_getx_clean/presentations/screens/authentication/sign_in_page.dart';
-import 'package:test_getx_clean/presentations/screens/authentication/sign_up_page.dart';
-import 'package:test_getx_clean/presentations/screens/news/news_detail_page.dart';
-import 'package:test_getx_clean/presentations/screens/news/news_page.dart';
+import 'package:fast_news_app/presentations/controllers/news_controller.dart';
+import 'package:fast_news_app/presentations/screens/authentication/sign_in_page.dart';
+import 'package:fast_news_app/presentations/screens/authentication/sign_up_page.dart';
+import 'package:fast_news_app/presentations/screens/news/news_detail_page.dart';
+import 'package:fast_news_app/presentations/screens/news/news_page.dart';
 
 import 'package:firebase_core/firebase_core.dart';
-import 'package:test_getx_clean/presentations/screens/purchase/omise_page.dart';
-import 'package:test_getx_clean/presentations/screens/utillity/app_validate_page.dart';
+import 'package:fast_news_app/presentations/screens/purchase/omise_page.dart';
+import 'package:fast_news_app/presentations/screens/utillity/app_validate_page.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -440,9 +440,9 @@ class MyApp extends StatelessWidget {
 ```dart
 // presentation/controllers/news_controller.dart
 import 'package:get/get.dart';
-import 'package:test_getx_clean/domain/entities/news_model/news_model.dart';
-import 'package:test_getx_clean/domain/usecases/get_news_use_case.dart';
-import 'package:test_getx_clean/domain/usecases/sign_out_user_use_case.dart';
+import 'package:fast_news_app/domain/entities/news_model/news_model.dart';
+import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
+import 'package:fast_news_app/domain/usecases/sign_out_user_use_case.dart';
 
 class NewsController extends GetxController {
   final GetNewsUseCase getNewsUsecase;
@@ -485,7 +485,7 @@ class NewsController extends GetxController {
 // lib/presentations/screens/news/news_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:test_getx_clean/presentations/controllers/news_controller.dart';
+import 'package:fast_news_app/presentations/controllers/news_controller.dart';
 import 'package:get/get.dart';
 
 class NewsPage extends StatelessWidget {

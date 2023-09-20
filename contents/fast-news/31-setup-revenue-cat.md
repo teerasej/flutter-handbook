@@ -75,7 +75,7 @@ class RevenueCatRepository {
 // lib/domain/usecases/get_offering_use_case.dart
 
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:test_getx_clean/data/repositories/revenue_cat_repository.dart';
+import 'package:fast_news_app/data/repositories/revenue_cat_repository.dart';
 
 class GetOfferingsUseCase {
   final RevenueCatRepository _repository;
@@ -96,7 +96,7 @@ class GetOfferingsUseCase {
 // lib/domain/usecases/subscribe_package_use_case.dart
 
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:test_getx_clean/data/repositories/revenue_cat_repository.dart';
+import 'package:fast_news_app/data/repositories/revenue_cat_repository.dart';
 
 class SubscribePackageUseCase {
   final RevenueCatRepository _repository;
@@ -117,8 +117,8 @@ class SubscribePackageUseCase {
 
 import 'package:get/get.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:test_getx_clean/domain/usecases/get_offering_use_case.dart';
-import 'package:test_getx_clean/domain/usecases/subscribe_package_use_case.dart';
+import 'package:fast_news_app/domain/usecases/get_offering_use_case.dart';
+import 'package:fast_news_app/domain/usecases/subscribe_package_use_case.dart';
 
 class PayWallController extends GetxController {
   final offering = Rxn<Offering>();
@@ -151,10 +151,10 @@ class PayWallController extends GetxController {
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:test_getx_clean/data/repositories/revenue_cat_repository.dart';
-import 'package:test_getx_clean/domain/usecases/get_offering_use_case.dart';
-import 'package:test_getx_clean/domain/usecases/subscribe_package_use_case.dart';
-import 'package:test_getx_clean/presentations/controllers/paywall_controller.dart';
+import 'package:fast_news_app/data/repositories/revenue_cat_repository.dart';
+import 'package:fast_news_app/domain/usecases/get_offering_use_case.dart';
+import 'package:fast_news_app/domain/usecases/subscribe_package_use_case.dart';
+import 'package:fast_news_app/presentations/controllers/paywall_controller.dart';
 
 class PayWallPage extends StatelessWidget {
   const PayWallPage({super.key});
@@ -238,22 +238,22 @@ class PayWallPage extends StatelessWidget {
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_getx_clean/data/repositories/firebase_repository.dart';
-import 'package:test_getx_clean/data/repositories/news_repository_web_api.dart';
-import 'package:test_getx_clean/data/repositories/revenue_cat_repository.dart';
-import 'package:test_getx_clean/domain/usecases/get_news_use_case.dart';
-import 'package:test_getx_clean/domain/usecases/sign_out_user_use_case.dart';
-import 'package:test_getx_clean/presentations/controllers/app_link_controller.dart';
+import 'package:fast_news_app/data/repositories/firebase_repository.dart';
+import 'package:fast_news_app/data/repositories/news_repository_web_api.dart';
+import 'package:fast_news_app/data/repositories/revenue_cat_repository.dart';
+import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
+import 'package:fast_news_app/domain/usecases/sign_out_user_use_case.dart';
+import 'package:fast_news_app/presentations/controllers/app_link_controller.dart';
 
-import 'package:test_getx_clean/presentations/controllers/news_controller.dart';
-import 'package:test_getx_clean/presentations/screens/authentication/sign_in_page.dart';
-import 'package:test_getx_clean/presentations/screens/authentication/sign_up_page.dart';
-import 'package:test_getx_clean/presentations/screens/news/news_detail_page.dart';
-import 'package:test_getx_clean/presentations/screens/news/news_page.dart';
+import 'package:fast_news_app/presentations/controllers/news_controller.dart';
+import 'package:fast_news_app/presentations/screens/authentication/sign_in_page.dart';
+import 'package:fast_news_app/presentations/screens/authentication/sign_up_page.dart';
+import 'package:fast_news_app/presentations/screens/news/news_detail_page.dart';
+import 'package:fast_news_app/presentations/screens/news/news_page.dart';
 
 import 'package:firebase_core/firebase_core.dart';
-import 'package:test_getx_clean/presentations/screens/subscription/paywall_page.dart';
-import 'package:test_getx_clean/presentations/screens/utillity/app_validate_page.dart';
+import 'package:fast_news_app/presentations/screens/subscription/paywall_page.dart';
+import 'package:fast_news_app/presentations/screens/utillity/app_validate_page.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -345,9 +345,9 @@ class MyApp extends StatelessWidget {
 
 // presentation/controllers/post_controller.dart
 import 'package:get/get.dart';
-import 'package:test_getx_clean/domain/entities/news_model/news_model.dart';
-import 'package:test_getx_clean/domain/usecases/get_news_use_case.dart';
-import 'package:test_getx_clean/domain/usecases/sign_out_user_use_case.dart';
+import 'package:fast_news_app/domain/entities/news_model/news_model.dart';
+import 'package:fast_news_app/domain/usecases/get_news_use_case.dart';
+import 'package:fast_news_app/domain/usecases/sign_out_user_use_case.dart';
 
 class NewsController extends GetxController {
   final GetNewsUseCase getNewsUsecase;
@@ -390,7 +390,7 @@ class NewsController extends GetxController {
 // lib/presentations/screens/news/news_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:test_getx_clean/presentations/controllers/news_controller.dart';
+import 'package:fast_news_app/presentations/controllers/news_controller.dart';
 import 'package:get/get.dart';
 
 class NewsPage extends StatelessWidget {
