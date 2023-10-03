@@ -18,6 +18,17 @@
 - [Do Discount](contents/do-discount.md)
 
 
+## State Management: GetX
+
+Learn following topics in this workshop: 
+- Working with Web API
+- Working with Asynchronous in Dart
+- State Management with Provider
+
+
+- [Contact App](contents/provider-getx/contact-app/)
+
+
 ## Major Workshop
 
 - [Fast News](contents/fast-news/README.md)
@@ -34,6 +45,8 @@
 Learning following topic:
 
 - [Contact App with Tab & Stack Navigation](contents/navigation-1/readme.md)
+
+
 
 ## State Management: Provider
 
