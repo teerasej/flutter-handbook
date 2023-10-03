@@ -1,7 +1,33 @@
 
 # สร้างส่วนของการจ่ายเงินโดยใช้ Omise Key
 
+เริ่มแรกสร้าง  `lib/domain/entities/charge_omise_request.dart`
+
+```dart
+class ChargeOmiseRequest {
+  final String name;
+  final String cardNumber;
+  final int expirationMonth;
+  final int expirationYear;
+  final String securityCode;
+  final int amount;
+
+  ChargeOmiseRequest({
+    this.name = "",
+    this.cardNumber = "",
+    this.expirationMonth = 0,
+    this.expirationYear = 0,
+    this.securityCode = "",
+    this.amount = 0,
+  });
+}
+
+```
+
+
 ## 1. สร้าง Omise Repository 
+
+
 
 ```dart
 // lib/data/repositories/omise_repository.dart
