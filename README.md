@@ -25,7 +25,7 @@ Learn following topics in this workshop:
 - Working with Asynchronous in Dart
 - State Management with Provider
 
-
+- [การกำหนดชื่อแอพ และ App ID](contents/fast-news/18-app-name-app-id.md)
 - [Contact App](contents/provider-getx/contact-app/)
 
 
