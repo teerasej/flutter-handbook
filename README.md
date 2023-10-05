@@ -27,6 +27,7 @@ Learn following topics in this workshop:
 
 - [การกำหนดชื่อแอพ และ App ID](contents/fast-news/18-app-name-app-id.md)
 - [Contact App](contents/provider-getx/contact-app/readme.md)
+- [Profile App](contents/provider-getx/web-api/readme.md)
 
 
 ## Major Workshop
