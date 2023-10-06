@@ -3,11 +3,13 @@
 
 - [Slide: Flutter](https://nextflowth-my.sharepoint.com/:b:/g/personal/teerasej_nextflowth_onmicrosoft_com/Effrugg78M5HtpnycBxwJaABTiGnUuZMSEFrBcXGdpj_DA?e=dprgnC)
 - [Slide: Object-Oriented in Dart & Flutter](https://nextflowth-my.sharepoint.com/:b:/g/personal/teerasej_nextflowth_onmicrosoft_com/EbnWPj_mVrVBtmtrgI_7DkcBH7MSRD9i6Egg54GSLIs-Qw?e=i88sed)
+- [DartPad](https://dartpad.dev/?)
 
 1. [Setup](contents/setup.md)
 2. [วิธีสร้างโปรเจคแอพใหม่](contents/run-and-debug-app.md)
 3. [วิธีเลือกอุปกรณ์ทดสอบเป้าหมาย](contents/select-target-device.md)
 4. [วิธีการ debug โปรเจค](contents/debug-app.md)
+
 
 
 ## เรียนรู้จากการสร้างไหม่
@@ -24,9 +26,6 @@ Learn following topics in this workshop:
 - Working with Web API
 - Working with Asynchronous in Dart
 - State Management with Provider
-
-- [Dashboard](https://teerasej440384.invisionapp.com/freehand/Organic-Cosme-mgp6oRMBO)
-- [DartPad](https://dartpad.dev/?)
 
 1. [การกำหนดชื่อแอพ และ App ID](contents/fast-news/18-app-name-app-id.md)
 2. [Contact App](contents/provider-getx/contact-app/readme.md)
