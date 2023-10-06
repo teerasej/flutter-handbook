@@ -25,8 +25,8 @@ Learn following topics in this workshop:
 - Working with Asynchronous in Dart
 - State Management with Provider
 
-[Dashboard](https://teerasej440384.invisionapp.com/freehand/Organic-Cosme-mgp6oRMBO)
-[DartPad](https://dartpad.dev/?)
+- [Dashboard](https://teerasej440384.invisionapp.com/freehand/Organic-Cosme-mgp6oRMBO)
+- [DartPad](https://dartpad.dev/?)
 
 1. [การกำหนดชื่อแอพ และ App ID](contents/fast-news/18-app-name-app-id.md)
 2. [Contact App](contents/provider-getx/contact-app/readme.md)
