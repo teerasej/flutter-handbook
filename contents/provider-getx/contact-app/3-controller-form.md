@@ -70,7 +70,7 @@ class NewContactPage extends StatelessWidget {
               ),
               // รับค่าจาก TextField ใส่ลงไปใน method controller ถ้าช่อง name มีการพิมพ์หรือลบข้อความ
               onChanged: (value) {
-                controller.onNameChanged(value);
+                controller.name = value ?? '';
               },
             ),
             TextField(
@@ -79,7 +79,7 @@ class NewContactPage extends StatelessWidget {
               ),
               // รับค่าจาก TextField ใส่ลงไปใน method controller ถ้าช่อง email มีการพิมพ์หรือลบข้อความ
               onChanged: (value) {
-                controller.onEmailChanged(value);
+                controller.email = value ?? '';
               },
             ),
             const SizedBox(height: 16.0),

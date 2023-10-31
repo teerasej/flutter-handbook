@@ -58,14 +58,6 @@ class NewContactController extends GetxController {
   String name = '';
   String email = '';
 
-  void onNameChanged(String value) {
-    name = value;
-  }
-
-  void onEmailChanged(String value) {
-    email = value;
-  }
-
   void save() {
     print('name: ${name}');
     print('email: ${email}');
