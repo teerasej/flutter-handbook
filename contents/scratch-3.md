@@ -16,19 +16,7 @@ Flutter เตรียมระบบให้เราสามารถสร
 import 'package:flutter/material.dart';
 
 void main() {
-	runApp(MaterialApp(
-        title: 'My Flutter',
-        theme: ThemeData(
-            primarySwatch: Colors.blue,
-            brightness: Brightness.dark
-        ),
-        home: Scaffold(
-            appBar: AppBar(
-                title: Text('Counter'),
-            ),
-            body: Text('hello'),
-        ),
-    ));
+	runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
