@@ -17,18 +17,6 @@ class NewContactController extends GetxController {
   String name = '';
   String email = '';
 
-  // สร้าง method ไว้รับค่า name จาก TextField เวลามีการพิมพ์
-  void onNameChanged(String value) {
-    // เอาค่าที่ได้รับมาเก็บไว้ในตัวแปร
-    name = value;
-  }
-
-  // สร้าง method ไว้รับค่า email จาก TextField เวลามีการพิมพ์
-  void onEmailChanged(String value) {
-    // เอาค่าที่ได้รับมาเก็บไว้ในตัวแปร
-    email = value;
-  }
-
   // สร้าง method ไว้แสดงชื่อ และ email ที่เก็บในตัวแปร
   void save() {
     print('name: ${name}');

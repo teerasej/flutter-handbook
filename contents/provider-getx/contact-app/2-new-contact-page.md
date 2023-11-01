@@ -73,8 +73,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Nextflow Contact App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primarySwatch: Colors.blue,
       ),
       initialRoute: '/',
       getPages: [
