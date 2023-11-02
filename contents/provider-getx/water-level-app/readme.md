@@ -29,3 +29,9 @@
 11. [สร้าง function สำหรับโหลดข้อมูลจาก server](11-create-function-to-load-data-from-server.md)
 12. [สร้าง class เก็บข้อมูล json](12-create-class-to-store-json-data.md)
 13. [เรียกข้อมูล json จาก server และกำหนดให้กับค่าตัวแปร](13-load-json-data-from-server.md)
+14. [ใช้ server คำนวนข้อความผลลัพธ์](14-use-server-to-calculate-result.md)
+
+## Part 4
+
+15. [สร้าง checkbox เพื่อใช้เปิดปิดการทำงานของ Slider](15-create-checkbox-to-enable-disable-slider.md)
+16. [ทำแบบเดียวกับ slider ที่เหลือ](16-do-the-same-for-other-sliders.md)
