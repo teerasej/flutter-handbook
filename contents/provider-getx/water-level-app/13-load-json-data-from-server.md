@@ -79,7 +79,7 @@ class ServerData {
 
 ```
 
-## 
+## 2. ส่ง request ไปที่ URL ที่เตรียมส่งค่า json กลับมา ไว้
 
 ```dart 
 // lib/pages/gate_calculator_page/gate_calculator_controller.dart
