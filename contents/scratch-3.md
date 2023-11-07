@@ -143,6 +143,8 @@ class _CounterAreaState extends State<CounterArea> {
 
 เขียน Widget เพิ่มในส่วนของ Scaffold
 
+[ดูเทคนิคการใช้งาน Widget แบบต่างๆ ได้ที่ Youtube ของพล](https://www.youtube.com/playlist?list=PLzdmsTRIBqiy7OfMe3jP98f0Y8MTuHjq2) นะครับ
+
 ```dart
 class CounterArea extends StatefulWidget {
   @override
