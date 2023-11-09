@@ -80,7 +80,7 @@ class NewContactController extends GetxController {
 
 ```
 
-## 4. setup contact controller แบบ lazy load
+## 4. setup contact controller 
 
 เราจำเป็นต้องทำการเพิ่ม contact controller ที่ Widget ด้านนอกสุดอย่าง MyApp เพื่อที่จะทำให้ widget ต่างๆ สามารถเรียกใช้ contact controller ได้
 
@@ -107,7 +107,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     // ทำการเพิ่ม Contact Controller ลงไปใน GetX 
-    Get.lazyPut(
+    Get.put(
       () {
         return ContactController();
       },

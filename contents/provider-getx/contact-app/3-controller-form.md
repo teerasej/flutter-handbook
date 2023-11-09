@@ -87,3 +87,36 @@ class NewContactPage extends StatelessWidget {
 }
 
 ```
+
+## 3. เพิ่มเงื่อนไขการบันทึกข้อมูล
+
+ว่าต้องมีการพิมพ์ข้อมูลในช่อง name และ email ก่อน ถึงจะทำการบันทึกข้อมูลได้
+
+
+```dart
+// lib/pages/new_contact_page/new_contact_controller.dart
+
+import 'package:get/get.dart';
+
+class NewContactController extends GetxController {
+  String name = "";
+  String email = "";
+
+  save() {
+    print('name: $name');
+    print('email: $email');
+
+    // ใช้ if else เพื่อเช็คว่า ช่อง name และ email มีการพิมพ์ข้อมูลหรือไม่
+    if (name.isEmpty || email.isEmpty) {
+
+      // ถ้าไม่มีการพิมพ์ข้อมูลในช่อง name และ email ให้แสดงข้อความว่า Please fill the form
+      print('Please fill the form');
+
+    } else {
+
+      // ถ้ามีการพิมพ์ข้อมูลในช่อง name และ email ให้เรียกใช้งาน GetX ในการเปลี่ยนหน้าไปยังหน้า Home Page
+      Get.back();
+    }
+  }
+}
+```
