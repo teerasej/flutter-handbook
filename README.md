@@ -30,7 +30,7 @@ Learn following topics in this workshop:
 1. [การกำหนดชื่อแอพ และ App ID](contents/fast-news/18-app-name-app-id.md)
 2. [Contact App](contents/provider-getx/contact-app/readme.md)
 3. [Profile App](contents/provider-getx/web-api/readme.md)
-4. [Water Level App](contents/provider-getx/water-level-app/readme.md)
+4. [Barcode Scanner](contents/provider-getx/barcode-scanner/readme.md)
 
 
 ## Major Workshop

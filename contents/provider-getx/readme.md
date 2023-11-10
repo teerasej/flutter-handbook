@@ -3,4 +3,5 @@
 
 - [Contact App](contact-app/readme.md) (GetX Navigation, Controller)
 - [Profile App](web-api/readme.md) (Web API)
+- [Barcode Scanner](barcode-scanner/readme.md)
 
