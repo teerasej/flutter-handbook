@@ -29,7 +29,7 @@ class ProfileController extends GetxController {
     );
 
     // แปลง JSON ที่ได้มาเป็น Model ของเรา โดยใช้ ProfileModel.fromMap ที่เราสร้างไว้
-    var profileList = List<ProfileModel>.from(
+    profileList = List<ProfileModel>.from(
       response.body.map(
         (json) => ProfileModel.fromMap(json),
       ),
