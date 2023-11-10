@@ -31,6 +31,8 @@ Learn following topics in this workshop:
 2. [Contact App](contents/provider-getx/contact-app/readme.md)
 3. [Profile App](contents/provider-getx/web-api/readme.md)
 4. [Barcode Scanner](contents/provider-getx/barcode-scanner/readme.md)
+5. [Water Level App](contents/provider-getx/water-level-app/readme.md)
+
 
 
 ## Major Workshop
