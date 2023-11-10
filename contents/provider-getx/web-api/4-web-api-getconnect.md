@@ -28,21 +28,12 @@ class ProfileController extends GetxController {
       'https://651d740c44e393af2d59d2b4.mockapi.io/api/profiles',
     );
 
-    // ข้อมูล JSON จะอยู่ใน body property ของตัวแปร response
-    var profileJSONList = response.body;
-
-    // แปลง json ให้เป็น mapped List (ยังไม่ใช่ List<ProfileModel>)
-    var mappedProfileList = profileJSONList.map(
-        (profileJSON) {
-          return ProfileModel.fromMap(profileJSON);
-        },
+    // แปลง JSON ที่ได้มาเป็น Model ของเรา โดยใช้ ProfileModel.fromMap ที่เราสร้างไว้
+    profileList = List<ProfileModel>.from(
+      response.body.map(
+        (json) => ProfileModel.fromMap(json),
       ),
-
-    // แปลง mapped List ให้เป็น List<ProfileModel>
-    var convertedProfileList = List<ProfileModel>.from(mappedProfileList);
-
-    // นำค่าที่ได้ใหม่ กำหนดให้กับตัวแปร profileList
-    profileList = convertedProfileList;
+    );
 
     // กำหนด loading เป็น false ส่วนนี้จะทำให้ Obx widget เกิดการ rebuild ตัวเองใหม่
     loading(false);
