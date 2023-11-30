@@ -3,6 +3,10 @@
 
 ## 1. สร้างตัวแปรเก็บ List ของ ProfileModel 
 
+```bash
+https://651d740c44e393af2d59d2b4.mockapi.io/api/profiles
+```
+
 ```dart
 // lib/controllers/profile_controller.dart
 
