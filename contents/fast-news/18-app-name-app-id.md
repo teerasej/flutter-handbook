@@ -16,19 +16,19 @@ flutter pub global activate rename
 2. เปลี่ยนชื่อแอพ
 
 ```bash
-flutter pub global run rename --appname "Fast News"
+rename setAppName --targets ios,android --value "MyAppName"
 ```
 
 3. เปลี่ยน package name (App ID ของฝั่ง android)
 
 ```bash
-flutter pub global run rename --bundleId th.in.nextflow.fastnews --target android
+rename setBundleId --targets android --value "th.in.nextflow.MyAppName"
 ```
 
 4. เปลี่ยน bundleId (App ID ของฝั่ง iOS)
 
 ```bash
-flutter pub global run rename --bundleId th.in.nextflow.fastnews --target ios
+rename setBundleId --targets ios --value "th.in.nextflow.MyAppName"
 ```
 
 ### B. [change_app_package_name](https://pub.dev/packages/change_app_package_name)
