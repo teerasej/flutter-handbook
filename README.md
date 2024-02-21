@@ -10,7 +10,10 @@
 3. [วิธีเลือกอุปกรณ์ทดสอบเป้าหมาย](contents/select-target-device.md)
 4. [วิธีการ debug โปรเจค](contents/debug-app.md)
 
+### Related Link
 
+- [Github.com ลงทะเบียน](https://github.com/signup)
+- [Github Copilot](https://github.com/features/copilot)
 
 ## เรียนรู้จากการสร้างไหม่
 
