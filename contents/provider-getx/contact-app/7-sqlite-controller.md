@@ -8,23 +8,22 @@
 ```dart
 // lib/controllers/contact_controller.dart
 
-import 'package:contact_app/models/contact_model.dart';
-import 'package:get/get.dart';
-
 // import package ที่จำเป็น
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
+import 'package:contact_app/models/contact_model.dart';
+import 'package:get/get.dart';
+
 class ContactController extends GetxController {
+  String name = '';
+  String email = '';
+  var warningMessage = '...'.obs;
   final contacts = <ContactModel>[].obs;
 
-  // สร้าง database object
+   // สร้าง database object
   Database? _database;
-
-  void addContact(ContactModel contact) {
-    contacts.add(contact);
-  }
 
   // สร้าง Method ที่จะมีการสร้างไฟล์ database และ schema ถ้าพบว่าเป็นการสร้างครั้งแรก
   Future<void> _initDatabase() async {
@@ -50,6 +49,25 @@ class ContactController extends GetxController {
       },
     );
   }
+
+  void save() {
+    print('name: ${name}');
+    print('email: ${email}');
+
+    if (name.isEmpty || email.isEmpty) {
+      warningMessage.value = 'please fill the form';
+      print(warningMessage);
+    } else {
+
+      contacts.add(
+        ContactModel(
+          name,
+          email,
+        ),
+      );
+      Get.back();
+    }
+  }
 }
 
 ```
@@ -57,14 +75,23 @@ class ContactController extends GetxController {
 ## 2.  ตอน controller เริ่มทำงาน ให้เรียก method สร้าง database file และ schema
 
 ```dart
-import 'package:contact_app/models/contact_model.dart';
-import 'package:get/get.dart';
+
+// lib/controllers/contact_controller.dart
+
+// import package ที่จำเป็น
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
+import 'package:contact_app/models/contact_model.dart';
+import 'package:get/get.dart';
+
 class ContactController extends GetxController {
+  String name = '';
+  String email = '';
+  var warningMessage = '...'.obs;
   final contacts = <ContactModel>[].obs;
+
   Database? _database;
 
   // override method onInit ใน GetxController ซึ่งจะทำงานเมื่อ controller ถูกเรียกขึ้นมาใช้งาน
@@ -76,9 +103,6 @@ class ContactController extends GetxController {
     _initDatabase();
   }
 
-  void addContact(ContactModel contact) {
-    contacts.add(contact);
-  }
 
   Future<void> _initDatabase() async {
     final directory = await getApplicationDocumentsDirectory();
@@ -92,6 +116,24 @@ class ContactController extends GetxController {
         );
       },
     );
+  }
+
+  void save() {
+    print('name: ${name}');
+    print('email: ${email}');
+
+    if (name.isEmpty || email.isEmpty) {
+      warningMessage.value = 'please fill the form';
+      print(warningMessage);
+    } else {
+
+      var newContact = ContactModel(
+        name,
+        email,
+      );
+      contacts.add( newContact);
+      Get.back();
+    }
   }
 }
 

@@ -33,27 +33,26 @@ class ContactModel {
 ```dart
 // lib/controllers/contact_controller.dart
 
-import 'package:contact_app/models/contact_model.dart';
-import 'package:get/get.dart';
+// import package ที่จำเป็น
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-class ContactController extends GetxController {
+import 'package:contact_app/models/contact_model.dart';
+import 'package:get/get.dart';
+
+class NewContactController extends GetxController {
+  String name = '';
+  String email = '';
+  var warningMessage = '...'.obs;
   final contacts = <ContactModel>[].obs;
+
   Database? _database;
 
   @override
   void onInit() {
     super.onInit();
     _initDatabase();
-  }
-
-  void addContact(ContactModel contact) {
-    contacts.add(contact);
-
-    // เรียก method insert ของ database object ที่เราสร้างไว้
-    _database!.insert('contacts', contact.toJson());
   }
 
 
@@ -69,6 +68,30 @@ class ContactController extends GetxController {
         );
       },
     );
+  }
+
+  void save() {
+    print('name: ${name}');
+    print('email: ${email}');
+
+    if (name.isEmpty || email.isEmpty) {
+      warningMessage.value = 'please fill the form';
+      print(warningMessage);
+    } else {
+
+      var newContact = ContactModel(
+        name,
+        email,
+      );
+      contacts.add( newContact);
+
+      _database?.insert(
+        'contacts',
+        newContact.toJson(),
+      );
+
+      Get.back();
+    }
   }
 }
 

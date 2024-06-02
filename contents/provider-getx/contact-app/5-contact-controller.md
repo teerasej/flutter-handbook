@@ -23,13 +23,13 @@ class ContactModel {
 
 ## 2. เพิ่ม List ของ contact ใน controller
 
-สร้างไฟล์ `lib/controllers/contact_controller.dart`
+เปิดไฟล์ `lib/controllers/contact_controller.dart`
 
 ```dart
 import 'package:contact_app/models/contact_model.dart';
 import 'package:get/get.dart';
 
-class NewContactController extends GetxController {
+class ContactController extends GetxController {
   String name = '';
   String email = '';
   var warningMessage = '...'.obs;
@@ -47,12 +47,12 @@ class NewContactController extends GetxController {
     } else {
 
       // เพิ่มข้อมูลใหม่ลงใน List ของ contacts
-      contacts.add(
-        ContactModel(
-          name,
-          email,
-        ),
+      var newContact = ContactModel(
+        name,
+        email,
       );
+      contacts.add( newContact);
+      
       Get.back();
     }
   }
@@ -63,14 +63,14 @@ class NewContactController extends GetxController {
 
 ## 3. setup new contract controller ในที่ใหมด้านนอกสุด
 
-เราจำเป็นต้องทำการเพิ่ม New contact controller ที่ Widget ด้านนอกสุดอย่าง MyApp เพื่อที่จะทำให้ widget ต่างๆ สามารถเรียกใช้ contact controller ได้
+เราจำเป็นต้องทำการเพิ่ม contact controller ที่ Widget ด้านนอกสุดอย่าง MyApp เพื่อที่จะทำให้ widget ต่างๆ สามารถเรียกใช้ contact controller ได้
 
 ```dart
 // lib/main.dart
 
 import 'package:contact_app/controllers/contact_controller.dart';
 import 'package:contact_app/pages/home_page/home_page.dart';
-import 'package:contact_app/pages/new_contact_page/new_contact_page.dart';
+import 'package:contact_app/controllers/contact_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/get.dart';
@@ -90,7 +90,7 @@ class MyApp extends StatelessWidget {
     // ทำการเพิ่ม Contact Controller ลงไปใน GetX 
     Get.put(
       () {
-        return NewContactController();
+        return ContactController();
       },
     );
 
@@ -124,7 +124,7 @@ class MyApp extends StatelessWidget {
 ## 4. Update หน้า New Contact Page ให้ใช้วิธีการหา (Get.find) ตัว controller จาก GetX
 
 ```dart
-import 'package:contact_app/pages/new_contact_page/new_contact_controller.dart';
+import 'package:contact_app/controllers/contact_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -132,7 +132,7 @@ class NewContactPage extends StatelessWidget {
   NewContactPage({super.key});
 
   // ใช้ Get.find ในการหา controller จาก GetX
-  var controller = Get.find<NewContactController>();
+  var controller = Get.find<ContactController>();
 
   @override
   Widget build(BuildContext context) {

@@ -44,10 +44,6 @@ class ContactController extends GetxController {
     }).toList();
   }
 
-  void addContact(ContactModel contact) {
-    contacts.add(contact);
-    _database!.insert('contacts', contact.toJson());
-  }
 
   Future<void> _initDatabase() async {
     final directory = await getApplicationDocumentsDirectory();
@@ -61,6 +57,30 @@ class ContactController extends GetxController {
         );
       },
     );
+  }
+
+  void save() {
+    print('name: ${name}');
+    print('email: ${email}');
+
+    if (name.isEmpty || email.isEmpty) {
+      warningMessage.value = 'please fill the form';
+      print(warningMessage);
+    } else {
+
+      var newContact = ContactModel(
+        name,
+        email,
+      );
+      contacts.add( newContact);
+
+      _database?.insert(
+        'contacts',
+        newContact.toJson(),
+      );
+
+      Get.back();
+    }
   }
 }
 

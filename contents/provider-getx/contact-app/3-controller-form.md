@@ -4,14 +4,14 @@
 ## 1. สร้าง controller เก็บค่าจากแบบฟอร์ม เวลาพิมพ์
 
 ```dart
-// lib/pages/new_contact_page/new_contact_controller.dart
+// lib/controllers/new_contact_controller.dart
 
 import 'package:contact_app/controllers/contact_controller.dart';
 import 'package:contact_app/models/contact_model.dart';
 import 'package:get/get.dart';
 
-// สร้าง GetxController โดยตั้งชื่อว่า NewContactController จะเอาไว้ใช้กับหน้า New Contact Page 
-class NewContactController extends GetxController {
+// สร้าง GetxController โดยตั้งชื่อว่า ContactController จะเอาไว้ใช้กับหน้า New Contact Page 
+class ContactController extends GetxController {
 
   // สร้างตัวแปร ไว้เก็บชื่อ และอีเมลล์
   String name = '';
@@ -31,7 +31,7 @@ class NewContactController extends GetxController {
 ```dart 
 // lib/pages/new_contact_page/new_contact_page.dart
 
-import 'package:contact_app/pages/new_contact_page/new_contact_controller.dart';
+import 'package:contact_app/controllers/new_contact_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -39,8 +39,8 @@ class NewContactPage extends StatelessWidget {
     // ลบ const ออก
   NewContactPage({super.key});
 
-  // สร้าง instance ของ NewContactController ใส่ลงไปในระบบ GetX และรับตัวแปร controller มาใช้งานกับ widget
-  var controller = Get.put(NewContactController());
+  // สร้าง instance ของ ContactController ใส่ลงไปในระบบ GetX และรับตัวแปร controller มาใช้งานกับ widget
+  var controller = Get.put(ContactController());
 
   @override
   Widget build(BuildContext context) {
@@ -94,11 +94,11 @@ class NewContactPage extends StatelessWidget {
 
 
 ```dart
-// lib/pages/new_contact_page/new_contact_controller.dart
+// lib/controllers/contact_controller.dart
 
 import 'package:get/get.dart';
 
-class NewContactController extends GetxController {
+class ContactController extends GetxController {
   String name = "";
   String email = "";
 

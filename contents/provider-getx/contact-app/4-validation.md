@@ -4,11 +4,11 @@
 ## 1. สร้างตัวแปรเก็บข้อความเตือน
 
 ```dart
-// lib/pages/new_contact_page/new_contact_controller.dart
+// lib/controllers/contact_controller.dart
 
 import 'package:get/get.dart';
 
-class NewContactController extends GetxController {
+class ContactController extends GetxController {
   var name = "";
   var email = "";
 
@@ -34,16 +34,16 @@ class NewContactController extends GetxController {
 ## 2. แสดงข้อความเตือนในหน้า new contact
 
 ```dart
-// lib/pages/new_contact_page/new_contact_page.dart
+// lib/controllers/new_contact_page.dart
 
-import 'package:contact_app/pages/new_contact_page/new_contact_controller.dart';
+import 'package:contact_app/controllers/contact_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class NewContactPage extends StatelessWidget {
   NewContactPage({super.key});
 
-  var controller = Get.put(NewContactController());
+  var controller = Get.put(ContactController());
 
   @override
   Widget build(BuildContext context) {
@@ -96,10 +96,10 @@ class NewContactPage extends StatelessWidget {
 ## 3. ใช้ตัวแปร observable ในการเก็บข้อความเตือน
 
 ```dart
-// lib/pages/new_contact_page/new_contact_controller.dart
+// lib/controllers/contact_controller.dart
 import 'package:get/get.dart';
 
-class NewContactController extends GetxController {
+class ContactController extends GetxController {
   var name = "";
   var email = "";
 
@@ -132,7 +132,7 @@ class NewContactController extends GetxController {
 ```dart
 // lib/pages/new_contact_page/new_contact_page.dart
 
-import 'package:contact_app/pages/new_contact_page/new_contact_controller.dart';
+import 'package:contact_app/controllers/contact_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
