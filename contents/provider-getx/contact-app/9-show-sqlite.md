@@ -14,6 +14,9 @@ import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
 class ContactController extends GetxController {
+  String name = '';
+  String email = '';
+  var warningMessage = '...'.obs;
   final contacts = <ContactModel>[].obs;
   Database? _database;
 
