@@ -21,68 +21,49 @@ class ContactModel {
 }
 ```
 
-## 2. สร้าง controller แชร์รายชื่อผู้ติดต่อเป็น list และเพิ่ม method สำหรับการเพิ่มผู้ติดต่อลงไปใน list
+## 2. เพิ่ม List ของ contact ใน controller
 
 สร้างไฟล์ `lib/controllers/contact_controller.dart`
 
 ```dart
-// lib/controllers/contact_controller.dart
-
-import 'package:contact_app/models/contact_model.dart';
-import 'package:get/get.dart';
-
-// สร้าง contact controller เพื่อแชร์ข้อมูล contact list ระหว่างหน้า Home และ New contact
-class ContactController extends GetxController {
-
-  // สร้างตัวแปร ชนิด list (array) เป็นแบบ observable (obs) เพื่อให้เวลามีการเปลี่ยนแปลงค่าในตัวแปรนี้ จะทำให้ widget Obx() มีการ re-render ตัวเองใหม่
-  final contacts = <ContactModel>[].obs;
-
-  // สร้าง method เพื่อให้สามารถเพิ่ม contact ใหม่ลง list ได้
-  void addContact(ContactModel contact) {
-    contacts.add(contact);
-  }
-}
-
-```
-
-## 3. ใช้ controller เพื่อเพิ่มผู้ติดต่อใหม่จากฟอร์ม
-
-```dart
-// lib/pages/new_contact_page/new_contact_controller.dart
-
-import 'package:contact_app/controllers/contact_controller.dart';
 import 'package:contact_app/models/contact_model.dart';
 import 'package:get/get.dart';
 
 class NewContactController extends GetxController {
   String name = '';
   String email = '';
+  var warningMessage = '...'.obs;
+
+  // สร้าง List ของ ContactModel ที่เป็น observable ด้วย .obs
+  final contacts = <ContactModel>[].obs;
 
   void save() {
     print('name: ${name}');
     print('email: ${email}');
 
-    // เรียกใช้ ContactController 
-    var contactController = Get.find<ContactController>();
+    if (name.isEmpty || email.isEmpty) {
+      warningMessage.value = 'please fill the form';
+      print(warningMessage);
+    } else {
 
-    // เรียกใช้ method addContact ของ ContactController เพื่อเพิ่มชื่อและ email ใหม่ลงไปใน list
-    contactController.addContact(
-      ContactModel(
-        name,
-        email,
-      ),
-    );
-
-    // สั่ง Getx เปิดย้อนกลับไป 1 หน้า
-    Get.back();
+      // เพิ่มข้อมูลใหม่ลงใน List ของ contacts
+      contacts.add(
+        ContactModel(
+          name,
+          email,
+        ),
+      );
+      Get.back();
+    }
   }
 }
 
+
 ```
 
-## 4. setup contact controller 
+## 3. setup new contract controller ในที่ใหมด้านนอกสุด
 
-เราจำเป็นต้องทำการเพิ่ม contact controller ที่ Widget ด้านนอกสุดอย่าง MyApp เพื่อที่จะทำให้ widget ต่างๆ สามารถเรียกใช้ contact controller ได้
+เราจำเป็นต้องทำการเพิ่ม New contact controller ที่ Widget ด้านนอกสุดอย่าง MyApp เพื่อที่จะทำให้ widget ต่างๆ สามารถเรียกใช้ contact controller ได้
 
 ```dart
 // lib/main.dart
@@ -109,7 +90,7 @@ class MyApp extends StatelessWidget {
     // ทำการเพิ่ม Contact Controller ลงไปใน GetX 
     Get.put(
       () {
-        return ContactController();
+        return NewContactController();
       },
     );
 
@@ -138,6 +119,64 @@ class MyApp extends StatelessWidget {
   }
 }
 
+```
+
+## 4. Update หน้า New Contact Page ให้ใช้วิธีการหา (Get.find) ตัว controller จาก GetX
+
+```dart
+import 'package:contact_app/pages/new_contact_page/new_contact_controller.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+class NewContactPage extends StatelessWidget {
+  NewContactPage({super.key});
+
+  // ใช้ Get.find ในการหา controller จาก GetX
+  var controller = Get.find<NewContactController>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('New Contact'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Name',
+              ),
+              onChanged: (String value) {
+                controller.name = value;
+              },
+            ),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Email',
+              ),
+              onChanged: (String value) {
+                controller.email = value;
+              },
+            ),
+            const SizedBox(height: 16.0),
+            ElevatedButton(
+              onPressed: () {
+                controller.save();
+                Get.back();
+              },
+              child: Text('Save'),
+            ),
+            Obx(() {
+              return Text(controller.warningMessage.value);
+            })
+          ],
+        ),
+      ),
+    );
+  }
+}
 ```
 
 ## 5. เรียกใช้ list มาสร้างรายการผู้ติดต่อ
