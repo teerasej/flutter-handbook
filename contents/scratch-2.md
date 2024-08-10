@@ -19,8 +19,7 @@ void main() {
   runApp(
     MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-        brightness: Brightness.dark,
+        primarySwatch: Colors.green,
       ),
       title: 'My Flutter',
       home: Scaffold(
