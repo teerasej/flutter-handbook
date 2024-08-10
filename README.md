@@ -23,7 +23,7 @@
 - [Do Discount](contents/do-discount.md)
 
 
-## State Management: GetX
+## State Management: GetX Provider
 
 Learn following topics in this workshop: 
 - Working with Web API
