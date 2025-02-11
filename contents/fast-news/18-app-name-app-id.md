@@ -18,17 +18,29 @@ flutter pub global activate rename
 ```bash
 rename setAppName --targets ios,android --value "MyAppName"
 ```
+หรือ
+```bash
+flutter pub global run rename setAppName --targets ios,android --value "MyAppName"
+```
 
 3. เปลี่ยน package name (App ID ของฝั่ง android)
 
 ```bash
 rename setBundleId --targets android --value "th.in.nextflow.MyAppName"
 ```
+หรือ 
+```bash
+flutter pub global run rename setBundleId --targets android --value "th.in.nextflow.MyAppName"
+```
 
 4. เปลี่ยน bundleId (App ID ของฝั่ง iOS)
 
 ```bash
 rename setBundleId --targets ios --value "th.in.nextflow.MyAppName"
+```
+หรือ
+```bash
+flutter pub global run rename setBundleId --targets ios --value "th.in.nextflow.MyAppName"
 ```
 
 ### B. [change_app_package_name](https://pub.dev/packages/change_app_package_name)
