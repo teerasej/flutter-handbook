@@ -92,4 +92,5 @@ Learn following topics in this workshop:
 ## Publishing Application 
 
 - [App Icon](contents/app-icon.md)
+- [การสร้างไฟล์ APK (Android) ด้วย Android Studio](contents/build-apk.md)
 - [การสร้างไฟล์ AAB (Android)](https://nextflow.in.th/2019/flutter-publish-aab-and-apk-file-for-android-thai/)
