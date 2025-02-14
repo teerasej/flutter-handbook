@@ -9,9 +9,8 @@ https://openai-nextflow.openai.azure.com/openai/deployments/gpt-4/chat/completio
 ```
 
 ### Key
-```
-BShF8RdpmjX9Uz8TxHRtfPpMS9MBivtgFKrEMizI2C2qA0cFBrIhJQQJ99BBACYeBjFXJ3w3AAABACOGdhYc
-```
+
+[เอารหัสจากที่นี่ ](https://teerasej.notion.site/OpenAI-Service-key-by-Nextflow-19a57679357d8067b482d5f4f48674c4?pvs=73)
 
 
 ## 1. สร้างกลไกการทำงานแบบ Async 
