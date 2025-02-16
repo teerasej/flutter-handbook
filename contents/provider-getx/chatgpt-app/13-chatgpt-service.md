@@ -49,7 +49,7 @@ class ChatController extends GetxController {
 }
 ```
 
-## 2. 
+## 2. เขียนสร้าง Request และรับ Response ผ่าน Dio
 
 ```dart
 import 'package:dio/dio.dart';
