@@ -7,7 +7,10 @@
 // ios/Runner/Info.plist
     ...
     <key>NSCameraUsageDescription</key>
-    <string>Camera permission is required for barcode scanning.</string>
+    <string>This app needs camera access to scan QR codes</string>
+    
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>This app needs photos access to get QR code from photo library</string>
 </dict>
 
 ```
