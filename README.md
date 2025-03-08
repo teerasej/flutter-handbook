@@ -42,6 +42,9 @@ Learn following topics in this workshop:
 6. [Profile App](contents/provider-getx/web-api/readme.md)
 7. [Water Level App](contents/provider-getx/water-level-app/readme.md)
 
+### ดู package น่าสนใจอื่นๆ ได้ที่ 
+
+https://fluttergems.dev/
 
 
 ## Major Workshop

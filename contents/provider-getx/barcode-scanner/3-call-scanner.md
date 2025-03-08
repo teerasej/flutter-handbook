@@ -84,22 +84,18 @@ class BarcodePage extends StatelessWidget {
 
   // ใช้ค่าจาก controller ในการแสดงผลบนหน้าจอ
   Widget _buildBarcode(String value) {
+    var message = "";
+    if (value.isEmpty) {
+      message = "Scan something...";
+    } else {
+      message = value;
+    }
 
-      // ถ้าไม่มีข้อมูลให้แสดงข้อความ 'Scan something!'
-      if (value.isEmpty) {
-        return const Text(
-          'Scan something!',
-          overflow: TextOverflow.fade,
-          style: TextStyle(color: Colors.white),
-        );
-      }
-
-      // ถ้ามีข้อมูลให้แสดงข้อมูลที่ได้จากการ scan
-      return Text(
-        value,
-        overflow: TextOverflow.fade,
-        style: const TextStyle(color: Colors.white),
-      );
+    return Text(
+      message,
+      overflow: TextOverflow.fade,
+      style: const TextStyle(color: Colors.white),
+    );
   }
   
   void _handleBarcode(BarcodeCapture barcodes) {
@@ -167,6 +163,73 @@ class HomePage extends StatelessWidget {
 
             // แสดง barcode value ที่ได้จากการ scan
             Obx(() => Text(controller.barcodeValue.value),)
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+## 5. ทำกลไกที่เปิดกลับไปหน้า HomePage เมื่อแสกนเสร็จแล้ว 
+
+```
+// lib/barcode_page.dart
+import 'package:flutter/material.dart';
+import 'package:mobile_scanner/mobile_scanner.dart';
+
+import 'package:get/get.dart';
+import 'barcode_controller.dart';
+
+class BarcodePage extends StatelessWidget {
+  BarcodePage({super.key});
+
+  final BarcodeController barcodeController = Get.find();
+
+  Widget _buildBarcode(String value) {
+    var message = "";
+    if (value.isEmpty) {
+      message = "Scan something...";
+    } else {
+      message = value;
+    }
+
+    return Text(
+      message,
+      overflow: TextOverflow.fade,
+      style: const TextStyle(color: Colors.white),
+    );
+  }
+
+  void _handleBarcode(BarcodeCapture barcodes) {
+    print(barcodes.barcodes.firstOrNull?.displayValue ?? '...');
+    barcodeController.barcodeValue.value =
+        barcodes.barcodes.firstOrNull?.displayValue ?? '...';
+
+    // เช็คว่าถ้ามีค่า barcode ได้มา ก็เปิดกลับไปหน้า HomePage
+    if(barcodes.barcodes.isNotEmpty) {
+      Get.back();
+    }    
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Scan Barcode')),
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+                child: MobileScanner(
+              onDetect: _handleBarcode,
+            )),
+            Center(
+              child: Obx(
+                () => _buildBarcode(barcodeController.barcodeValue.value),
+              ),
+            ),
           ],
         ),
       ),
