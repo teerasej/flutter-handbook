@@ -84,22 +84,18 @@ class BarcodePage extends StatelessWidget {
 
   // ใช้ค่าจาก controller ในการแสดงผลบนหน้าจอ
   Widget _buildBarcode(String value) {
+    var message = "";
+    if (value.isEmpty) {
+      message = "Scan something...";
+    } else {
+      message = value;
+    }
 
-      // ถ้าไม่มีข้อมูลให้แสดงข้อความ 'Scan something!'
-      if (value.isEmpty) {
-        return const Text(
-          'Scan something!',
-          overflow: TextOverflow.fade,
-          style: TextStyle(color: Colors.white),
-        );
-      }
-
-      // ถ้ามีข้อมูลให้แสดงข้อมูลที่ได้จากการ scan
-      return Text(
-        value,
-        overflow: TextOverflow.fade,
-        style: const TextStyle(color: Colors.white),
-      );
+    return Text(
+      message,
+      overflow: TextOverflow.fade,
+      style: const TextStyle(color: Colors.white),
+    );
   }
   
   void _handleBarcode(BarcodeCapture barcodes) {
@@ -192,16 +188,15 @@ class BarcodePage extends StatelessWidget {
   final BarcodeController barcodeController = Get.find();
 
   Widget _buildBarcode(String value) {
+    var message = "";
     if (value.isEmpty) {
-      return const Text(
-        'Scan something!',
-        overflow: TextOverflow.fade,
-        style: TextStyle(color: Colors.white),
-      );
+      message = "Scan something...";
+    } else {
+      message = value;
     }
 
     return Text(
-      value,
+      message,
       overflow: TextOverflow.fade,
       style: const TextStyle(color: Colors.white),
     );
