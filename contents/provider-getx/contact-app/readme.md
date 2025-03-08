@@ -40,3 +40,7 @@ git clone -b finish https://github.com/teerasej/nextflow_flutter_3_contact_app
 4. [แสดงข้อมูลจาก SQLite database ในหน้า home](9-show-sqlite.md)
 
 - [Finish project](https://github.com/teerasej/nextflow_flutter_3_contact_app/tree/add-sqlite-functionality)
+
+## Trouble shooting
+
+หากมีปัญหาเรื่อง Java Version, Gradle, ACP ตอนรันโปรเจคให้ลองใช้ hotfix [ตรงนี้ดูครับ](https://github.com/flutter/flutter/issues/156304#issuecomment-2397707812)
