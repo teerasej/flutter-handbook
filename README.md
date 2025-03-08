@@ -30,12 +30,17 @@ Learn following topics in this workshop:
 - Working with Asynchronous in Dart
 - State Management with Provider
 
-1. [การกำหนดชื่อแอพ และ App ID](contents/fast-news/18-app-name-app-id.md)
+
+1. [ChatGPT App](contents/provider-getx/chatgpt-app/readme.md)
 2. [Contact App](contents/provider-getx/contact-app/readme.md)
-3. [Profile App](contents/provider-getx/web-api/readme.md)
-4. [ChatGPT App](contents/provider-getx/chatgpt-app/readme.md)
-5. [Barcode Scanner](contents/provider-getx/barcode-scanner/readme.md)
-6. [Water Level App](contents/provider-getx/water-level-app/readme.md)
+3. [Barcode Scanner](contents/provider-getx/barcode-scanner/readme.md)
+4. [Tab Bar with Multiple Navigator](contents/provider-getx/tab-bar-with-multiple-navigator/readme.md)
+5. [การกำหนดชื่อแอพ และ App ID](contents/fast-news/18-app-name-app-id.md)
+
+### Optional
+
+6. [Profile App](contents/provider-getx/web-api/readme.md)
+7. [Water Level App](contents/provider-getx/water-level-app/readme.md)
 
 
 
