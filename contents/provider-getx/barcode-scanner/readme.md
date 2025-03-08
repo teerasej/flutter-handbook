@@ -6,7 +6,4 @@
 3. [กำหนด iOS Permission](2-ios-permission.md)
 4. [เรียกใช้ Scanner](3-call-scanner.md)
 
-## ดู package น่าสนใจอื่นๆ ได้ที่ 
-
-https://fluttergems.dev/
 
