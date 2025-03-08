@@ -1,11 +1,16 @@
 
 # Contact App with GetX
 
-## โปรเจคบน Github
+## Starter project บน Github
 
 - [Start](https://github.com/teerasej/nextflow_flutter_3_contact_app/tree/start)
 - [Finish](https://github.com/teerasej/nextflow_flutter_3_contact_app/tree/finish)
 
+หรือใช้คำสั่งด้านล่างในการ clone มา
+
+```bash
+git clone -b start ttps://github.com/teerasej/nextflow_flutter_3_contact_app
+```
 หรือเลือกสร้างโปรเจคใหม่ โดยใช้ชื่อว่า `contact_app`
 
 ## Step by Step
@@ -18,7 +23,14 @@
 
 ## SQLite 
 
-- [Start project](https://github.com/teerasej/nextflow_flutter_3_contact_app/tree/finish)
+### Stater project
+
+- ทำการ download ไฟล์ zip จาก [Start project](https://github.com/teerasej/nextflow_flutter_3_contact_app/tree/finish) มาเป็นโปรเจคตั้งต้น
+- หรือใช้คำสั่งด้านล่างในการ clone มา
+
+```bash
+git clone -b finish https://github.com/teerasej/nextflow_flutter_3_contact_app
+```
 
 หากพบปัญหาในการรันแอพบน Android ด้วย error `'ThemeData' is from 'package:flutter/src/material/theme_data.dart' ` ให้[ลองแก้ไขปัญหาด้วยวิธีนี้](https://github.com/teerasej/nextflow_flutter_3_contact_app/issues/2#issuecomment-2143506201) 
 
