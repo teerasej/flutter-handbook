@@ -37,6 +37,9 @@ Learn following topics in this workshop:
 5. [Barcode Scanner](contents/provider-getx/barcode-scanner/readme.md)
 6. [Water Level App](contents/provider-getx/water-level-app/readme.md)
 
+### ดู package น่าสนใจอื่นๆ ได้ที่ 
+
+https://fluttergems.dev/
 
 
 ## Major Workshop
