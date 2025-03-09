@@ -97,6 +97,7 @@ Learn following topics in this workshop:
 - [Extension Method](contents/extension-method/README.md)
 - [Provider: Shopping Cart Demo](contents/shopping-cart/README.md)
 - [Method Channel](contents/method-channel/README.md)
+- [(PDF) Security guideline for Flutter](https://github.com/teerasej/flutter-handbook/blob/master/contents/Security-guideline-in-Flutter-application.pdf)
 
 ## Publishing Application 
 
